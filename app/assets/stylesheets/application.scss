@@ -24,6 +24,7 @@ body{
 	padding-top: 40px;
 }
 #content{
+	padding-top: 10vh;
 	min-height: 100vh;
 }
 nav.navbar .brand{
@@ -62,6 +63,11 @@ a.important{
 	border-radius: 20px;
 	border: 1px solid #0D3D56;
 }
+#content a, #content .btn{
+	font-weight: bold !important;
+	margin-right: 20px;
+	color: #0D3D56;
+}
 .footer{
 	background-color: #0D3D56;
 	color: white !important;
@@ -73,4 +79,25 @@ a.important{
 }
 .footer i{
 	padding-right: 20px;
+}
+table thead tr th{
+	padding: 20px;
+	border: 2px solid white;
+	background-color: #0D3D56;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+table tbody tr td{
+	padding: 20px 0px;
+	font-size: 15px;
+}
+h1{
+	font-size: 15px;
+	padding: 23px 15px;
+	border: 2px solid white !important;
+	background-color: #0D3D56;
+	color: white;
+	font-weight: bold;
+	margin: 0px 0px 30px 0px;
 }

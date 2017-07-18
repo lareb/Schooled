@@ -1,18 +1,19 @@
-h1 Listing schools
-
-table
+table.table-responsive.col-xs-12
   thead
     tr
-      th
-      th
-      th
+      th.col-xs-6.col-md-4 Name
+      th.col-xs-3.col-md-4 Address
+      th.col-xs-3.col-md-4 Actions
 
   tbody
     - @schools.each do |school|
       tr
-        td = link_to 'Show', school
-        td = link_to 'Edit', edit_school_path(school)
-        td = link_to 'Destroy', school, data: { confirm: 'Are you sure?' }, method: :delete
+        td.col-xs-6.col-md-4 = school.name
+        td.col-xs-3.col-md-4 = school.address
+        td.col-xs-3.col-md-4 
+          = link_to 'Show', school
+          = link_to 'Edit', edit_school_path(school)
+          = link_to 'Destroy', school, data: { confirm: 'Are you sure?' }, method: :delete
 
 br
 
