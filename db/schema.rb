@@ -15,25 +15,32 @@ ActiveRecord::Schema.define(version: 20170717192448) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "classes", force: :cascade do |t|
+  create_table "courses", force: :cascade do |t|
+    t.bigint "subject_id"
+    t.bigint "school_id"
     t.date "year"
-    t.integer "subject_id"
+    t.index ["school_id"], name: "index_courses_on_school_id"
+    t.index ["subject_id"], name: "index_courses_on_subject_id"
   end
 
-  create_table "classes_students", id: false, force: :cascade do |t|
-    t.bigint "class_id", null: false
-    t.bigint "student_id", null: false
+  create_table "courses_users", id: false, force: :cascade do |t|
+    t.bigint "course_id"
+    t.bigint "user_id"
     t.float "first_term_mark"
     t.float "second_term_mark"
     t.float "final_mark"
-    t.index ["class_id"], name: "index_classes_students_on_class_id"
-    t.index ["student_id"], name: "index_classes_students_on_student_id"
+    t.index ["course_id"], name: "index_courses_users_on_course_id"
+    t.index ["user_id"], name: "index_courses_users_on_user_id"
   end
 
   create_table "marks", force: :cascade do |t|
+    t.bigint "course_id"
+    t.bigint "user_id"
     t.string "mark"
     t.boolean "approved"
     t.string "description"
+    t.index ["course_id"], name: "index_marks_on_course_id"
+    t.index ["user_id"], name: "index_marks_on_user_id"
   end
 
   create_table "permissions", force: :cascade do |t|
@@ -42,15 +49,16 @@ ActiveRecord::Schema.define(version: 20170717192448) do
   end
 
   create_table "permissions_roles", id: false, force: :cascade do |t|
-    t.bigint "role_id", null: false
-    t.bigint "permission_id", null: false
+    t.bigint "role_id"
+    t.bigint "permission_id"
     t.index ["permission_id"], name: "index_permissions_roles_on_permission_id"
     t.index ["role_id"], name: "index_permissions_roles_on_role_id"
   end
 
   create_table "roles", force: :cascade do |t|
+    t.bigint "school_id"
     t.string "title"
-    t.integer "school_id"
+    t.index ["school_id"], name: "index_roles_on_school_id"
   end
 
   create_table "schools", force: :cascade do |t|
@@ -65,10 +73,13 @@ ActiveRecord::Schema.define(version: 20170717192448) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.bigint "school_id"
+    t.bigint "role_id"
     t.string "name"
     t.string "password"
-    t.integer "school_id"
-    t.integer "role_id"
+    t.string "email"
+    t.index ["role_id"], name: "index_users_on_role_id"
+    t.index ["school_id"], name: "index_users_on_school_id"
   end
 
 end
