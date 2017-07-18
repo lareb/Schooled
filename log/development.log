@@ -1,0 +1,2245 @@
+Started GET "/" for 127.0.0.1 at 2017-07-17 23:29:54 +0300
+  
+PG::ConnectionBad (FATAL:  Peer authentication failed for user "postgres"
+):
+  
+pg (0.21.0) lib/pg.rb:56:in `initialize'
+pg (0.21.0) lib/pg.rb:56:in `new'
+pg (0.21.0) lib/pg.rb:56:in `connect'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `connect'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.2) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-07-17 23:32:47 +0300
+  
+PG::ConnectionBad (FATAL:  Peer authentication failed for user "postgres"
+):
+  
+pg (0.21.0) lib/pg.rb:56:in `initialize'
+pg (0.21.0) lib/pg.rb:56:in `new'
+pg (0.21.0) lib/pg.rb:56:in `connect'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `connect'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.2) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-07-17 23:37:17 +0300
+  
+PG::ConnectionBad (FATAL:  Peer authentication failed for user "postgres"
+):
+  
+pg (0.21.0) lib/pg.rb:56:in `initialize'
+pg (0.21.0) lib/pg.rb:56:in `new'
+pg (0.21.0) lib/pg.rb:56:in `connect'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `connect'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.2) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-07-17 23:39:59 +0300
+  
+PG::ConnectionBad (FATAL:  Peer authentication failed for user "postgres"
+):
+  
+pg (0.21.0) lib/pg.rb:56:in `initialize'
+pg (0.21.0) lib/pg.rb:56:in `new'
+pg (0.21.0) lib/pg.rb:56:in `connect'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `connect'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.2) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (16.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (12.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3908559930667590240);[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170717185347)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "password" character varying, "school_id" integer, "role_id" integer)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717185347"]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRoles (20170717191428)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "title" character varying, "school_id" integer)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717191428"]]
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSchools (20170717191519)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "schools" ("id" bigserial primary key, "name" character varying, "address" character varying, "phone_number" character varying)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717191519"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePermissions (20170717191626)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE TABLE "permissions" ("id" bigserial primary key, "title" character varying, "description" character varying)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717191626"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinTableRolePermission (20170717191905)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "permissions_roles" ("role_id" bigint NOT NULL, "permission_id" bigint NOT NULL)[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE  INDEX  "index_permissions_roles_on_role_id" ON "permissions_roles"  ("role_id")[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE  INDEX  "index_permissions_roles_on_permission_id" ON "permissions_roles"  ("permission_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717191905"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSubjects (20170717192215)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" bigserial primary key, "name" character varying, "grade" integer)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717192215"]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateClasses (20170717192253)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "classes" ("id" bigserial primary key, "year" date, "subject_id" integer)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717192253"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinTableClassStudent (20170717192345)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "classes_students" ("class_id" bigint NOT NULL, "student_id" bigint NOT NULL, "first_term_mark" float, "second_term_mark" float, "final_mark" float)[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE  INDEX  "index_classes_students_on_class_id" ON "classes_students"  ("class_id")[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE  INDEX  "index_classes_students_on_student_id" ON "classes_students"  ("student_id")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717192345"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMarks (20170717192448)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "marks" ("id" bigserial primary key, "mark" character varying, "approved" boolean, "description" character varying)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717192448"]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-07-17 21:24:55.044196"], ["updated_at", "2017-07-17 21:24:55.044196"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3908559930667590240)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-07-18 00:25:43 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 12ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 00:26:50 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.2/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 9ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (105.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "schooled_development"[0m
+  [1m[35m (103.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "schooled_test"[0m
+  [1m[35m (104.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "schooled_development"[0m
+  [1m[35m (104.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "schooled_test"[0m
+  [1m[35m (104.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "schooled_development"[0m
+  [1m[35m (106.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "schooled_test"[0m
+  [1m[35m (12.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3908559930667590240);[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170717185347)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "password" character varying, "email" character varying)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_role_id" ON "users"  ("role_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3908559930667590240)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3908559930667590240);[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRoles (20170717161428)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "title" character varying)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_roles_on_school_id" ON "roles"  ("school_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3908559930667590240)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (104.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "schooled_development"[0m
+  [1m[35m (104.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "schooled_test"[0m
+  [1m[35m (14.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3908559930667590240);[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSchools (20170717151519)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "schools" ("id" bigserial primary key, "name" character varying, "address" character varying, "phone_number" character varying)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717151519"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRoles (20170717161428)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.8ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "title" character varying)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_roles_on_school_id" ON "roles"  ("school_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3908559930667590240)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-07-18 10:24:53.574569"], ["updated_at", "2017-07-18 10:24:53.574569"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (104.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "schooled_development"[0m
+  [1m[35m (104.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "schooled_test"[0m
+  [1m[35m (16.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (11.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3908559930667590240);[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSchools (20170717151519)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "schools" ("id" bigserial primary key, "name" character varying, "address" character varying, "phone_number" character varying)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717151519"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRoles (20170717161428)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "school_id" bigint, "title" character varying)[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE  INDEX  "index_roles_on_school_id" ON "roles"  ("school_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717161428"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20170717185347)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "school_id" bigint, "role_id" bigint, "name" character varying, "password" character varying, "email" character varying)[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_school_id" ON "users"  ("school_id")[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_role_id" ON "users"  ("role_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717185347"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePermissions (20170717191626)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "permissions" ("id" bigserial primary key, "title" character varying, "description" character varying)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717191626"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateJoinTablePermissionRole (20170717191905)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3908559930667590240)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-07-18 10:27:08.719634"], ["updated_at", "2017-07-18 10:27:08.719634"]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (105.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "schooled_development"[0m
+  [1m[35m (104.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "schooled_test"[0m
+  [1m[35m (15.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3908559930667590240);[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSchools (20170717151519)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "schools" ("id" bigserial primary key, "name" character varying, "address" character varying, "phone_number" character varying)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717151519"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRoles (20170717161428)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "school_id" bigint, "title" character varying)[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE  INDEX  "index_roles_on_school_id" ON "roles"  ("school_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717161428"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20170717185347)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "school_id" bigint, "role_id" bigint, "name" character varying, "password" character varying, "email" character varying)[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_school_id" ON "users"  ("school_id")[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_role_id" ON "users"  ("role_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717185347"]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePermissions (20170717191626)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE "permissions" ("id" bigserial primary key, "title" character varying, "description" character varying)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717191626"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePermissionRoles (20170717191905)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "permissions_roles" ("role_id" bigint, "permission_id" bigint)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE  INDEX  "index_permissions_roles_on_role_id" ON "permissions_roles"  ("role_id")[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE  INDEX  "index_permissions_roles_on_permission_id" ON "permissions_roles"  ("permission_id")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717191905"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSubjects (20170717192215)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" bigserial primary key, "name" character varying, "grade" integer)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717192215"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCourses (20170717192253)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3908559930667590240)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-07-18 10:27:48.033067"], ["updated_at", "2017-07-18 10:27:48.033067"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (106.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "schooled_development"[0m
+  [1m[35m (105.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "schooled_test"[0m
+  [1m[35m (13.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3908559930667590240);[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSchools (20170717151519)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.2ms)[0m  [1m[35mCREATE TABLE "schools" ("id" bigserial primary key, "name" character varying, "address" character varying, "phone_number" character varying)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717151519"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRoles (20170717161428)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "roles" ("id" bigserial primary key, "school_id" bigint, "title" character varying)[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE  INDEX  "index_roles_on_school_id" ON "roles"  ("school_id")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717161428"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20170717185347)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "school_id" bigint, "role_id" bigint, "name" character varying, "password" character varying, "email" character varying)[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_school_id" ON "users"  ("school_id")[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_role_id" ON "users"  ("role_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717185347"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePermissions (20170717191626)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE TABLE "permissions" ("id" bigserial primary key, "title" character varying, "description" character varying)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717191626"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreatePermissionRoles (20170717191905)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "permissions_roles" ("role_id" bigint, "permission_id" bigint)[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE  INDEX  "index_permissions_roles_on_role_id" ON "permissions_roles"  ("role_id")[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE  INDEX  "index_permissions_roles_on_permission_id" ON "permissions_roles"  ("permission_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717191905"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateSubjects (20170717192215)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.2ms)[0m  [1m[35mCREATE TABLE "subjects" ("id" bigserial primary key, "name" character varying, "grade" integer)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717192215"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCourses (20170717192253)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "courses" ("id" bigserial primary key, "subject_id" bigint, "school_id" bigint, "year" date)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE  INDEX  "index_courses_on_subject_id" ON "courses"  ("subject_id")[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE  INDEX  "index_courses_on_school_id" ON "courses"  ("school_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717192253"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCourseUsers (20170717192345)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "courses_users" ("course_id" bigint, "user_id" bigint, "first_term_mark" float, "second_term_mark" float, "final_mark" float)[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE  INDEX  "index_courses_users_on_course_id" ON "courses_users"  ("course_id")[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE  INDEX  "index_courses_users_on_user_id" ON "courses_users"  ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717192345"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMarks (20170717192448)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "marks" ("id" bigserial primary key, "course_id" bigint, "user_id" bigint, "mark" character varying, "approved" boolean, "description" character varying)[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE  INDEX  "index_marks_on_course_id" ON "marks"  ("course_id")[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE  INDEX  "index_marks_on_user_id" ON "marks"  ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170717192448"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-07-18 10:27:58.120322"], ["updated_at", "2017-07-18 10:27:58.120322"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3908559930667590240)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-07-18 14:58:34 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: jquery-ui.
+Load paths:
+  /home/panda/workspace/Schooled/app/assets/config
+  /home/panda/workspace/Schooled/app/assets/images
+  /home/panda/workspace/Schooled/app/assets/javascripts
+  /home/panda/workspace/Schooled/app/assets/stylesheets
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.2/lib/assets/compiled
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.2/lib/assets/compiled
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/panda/workspace/Schooled/node_modules
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/images
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets):
+    4:     <title>Schooled</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.scss:18
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1962404572020140502_47395763381640'
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:01:16 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (7.3ms)
+Completed 200 OK in 3273ms (Views: 3268.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:04:07 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:04:45 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+Completed 200 OK in 95ms (Views: 94.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:05:24 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.7ms)
+  Rendered layouts/header/_header.html.slim (7.3ms)
+Completed 200 OK in 102ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:05:39 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (8.6ms)
+Completed 200 OK in 97ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:05:53 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.3ms)
+  Rendered layouts/header/_header.html.slim (6.5ms)
+Completed 200 OK in 104ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:06:02 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (7.6ms)
+Completed 200 OK in 100ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:06:20 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.8ms)
+  Rendered layouts/header/_header.html.slim (6.6ms)
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:07:30 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (5.1ms)
+Completed 200 OK in 93ms (Views: 92.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:08:28 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.4ms)
+Completed 200 OK in 97ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:09:02 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (4.0ms)
+Completed 200 OK in 91ms (Views: 90.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:10:01 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.1ms)
+  Rendered layouts/header/_header.html.slim (28.2ms)
+Completed 200 OK in 1349ms (Views: 1347.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:10:24 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (2.7ms)
+Completed 200 OK in 1235ms (Views: 1234.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:10:47 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+Completed 200 OK in 1328ms (Views: 1326.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:11:12 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+Completed 200 OK in 106ms (Views: 105.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:11:46 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.0ms)
+  Rendered layouts/header/_header.html.slim (2.6ms)
+Completed 200 OK in 1236ms (Views: 1235.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:12:06 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (4.8ms)
+Completed 200 OK in 1350ms (Views: 1349.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:12:15 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+Completed 200 OK in 1162ms (Views: 1161.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:12:37 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (2.9ms)
+Completed 200 OK in 117ms (Views: 115.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:13:08 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.2ms)
+Completed 200 OK in 1239ms (Views: 1238.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:13:27 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.2ms)
+  Rendered layouts/header/_header.html.slim (2.9ms)
+Completed 200 OK in 1301ms (Views: 1300.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:13:40 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (5.3ms)
+Completed 200 OK in 1390ms (Views: 1389.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:13:51 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.9ms)
+  Rendered layouts/header/_header.html.slim (3.1ms)
+Completed 200 OK in 1211ms (Views: 1210.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:14:14 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (2.8ms)
+Completed 200 OK in 124ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:15:03 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (3.4ms)
+Completed 200 OK in 98ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:17:20 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (2.9ms)
+Completed 200 OK in 101ms (Views: 100.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:17:50 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.9ms)
+  Rendered layouts/header/_header.html.slim (2.6ms)
+Completed 200 OK in 1269ms (Views: 1268.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:18:01 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (3.2ms)
+Completed 200 OK in 1320ms (Views: 1319.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:18:13 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (3.8ms)
+Completed 200 OK in 1343ms (Views: 1342.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:18:41 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (2.8ms)
+Completed 200 OK in 112ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:18:49 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.5ms)
+Completed 200 OK in 94ms (Views: 93.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:19:00 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (3.4ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:19:15 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+Completed 200 OK in 87ms (Views: 85.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:19:41 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (5.1ms)
+Completed 200 OK in 98ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:19:53 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (4.9ms)
+Completed 200 OK in 100ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:20:19 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (7.4ms)
+Completed 200 OK in 99ms (Views: 97.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:21:17 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (3.1ms)
+Completed 200 OK in 179ms (Views: 178.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:21:31 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.5ms)
+  Rendered layouts/header/_header.html.slim (3.2ms)
+Completed 200 OK in 194ms (Views: 193.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:25:37 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.4ms)
+  Rendered layouts/header/_header.html.slim (3.3ms)
+Completed 200 OK in 195ms (Views: 194.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:26:28 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.6ms)
+Completed 200 OK in 194ms (Views: 193.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:26:44 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (10.2ms)
+Completed 200 OK in 193ms (Views: 192.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:27:17 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.1ms)
+Completed 200 OK in 94ms (Views: 93.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:27:20 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+Completed 200 OK in 93ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:27:21 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.4ms)
+  Rendered layouts/header/_header.html.slim (3.5ms)
+Completed 200 OK in 107ms (Views: 106.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:27:21 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+Completed 200 OK in 98ms (Views: 97.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:27:36 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.9ms)
+  Rendered layouts/header/_header.html.slim (2.9ms)
+Completed 200 OK in 1228ms (Views: 1227.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:27:45 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (3.0ms)
+  Rendered layouts/header/_header.html.slim (3.2ms)
+Completed 200 OK in 97ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:28:26 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.4ms)
+Completed 200 OK in 1322ms (Views: 1321.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:29:27 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.3ms)
+Completed 200 OK in 1299ms (Views: 1297.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:30:26 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.7ms)
+  Rendered layouts/header/_header.html.slim (3.3ms)
+Completed 200 OK in 1245ms (Views: 1243.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:31:36 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.8ms)
+  Rendered layouts/header/_header.html.slim (3.2ms)
+Completed 200 OK in 1258ms (Views: 1256.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:31:48 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (2.6ms)
+Completed 200 OK in 1268ms (Views: 1267.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:32:13 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (2.6ms)
+Completed 200 OK in 1270ms (Views: 1269.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:32:35 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (2.7ms)
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:33:10 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (2.6ms)
+Completed 200 OK in 1247ms (Views: 1245.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:33:24 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.8ms)
+  Rendered layouts/header/_header.html.slim (3.2ms)
+Completed 200 OK in 1238ms (Views: 1237.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:33:35 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.9ms)
+Completed 200 OK in 1294ms (Views: 1293.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:33:43 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.8ms)
+  Rendered layouts/header/_header.html.slim (2.6ms)
+Completed 200 OK in 1163ms (Views: 1161.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:33:54 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (2.9ms)
+Completed 200 OK in 1244ms (Views: 1243.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:34:35 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (4.4ms)
+Completed 200 OK in 1180ms (Views: 1179.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:34:52 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (3.4ms)
+Completed 200 OK in 117ms (Views: 116.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:35:04 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (2.5ms)
+Completed 200 OK in 1155ms (Views: 1154.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:35:11 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (5.3ms)
+Completed 200 OK in 1163ms (Views: 1160.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:35:20 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (2.4ms)
+Completed 200 OK in 1168ms (Views: 1167.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:35:25 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (5.2ms)
+Completed 200 OK in 1157ms (Views: 1156.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:35:41 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.1ms)
+  Rendered layouts/header/_header.html.slim (2.5ms)
+Completed 200 OK in 1158ms (Views: 1157.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:35:47 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (5.2ms)
+Completed 200 OK in 1151ms (Views: 1149.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:36:14 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.0ms)
+  Rendered layouts/header/_header.html.slim (2.7ms)
+Completed 200 OK in 1154ms (Views: 1152.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:36:45 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (2.3ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:37:01 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (4.0ms)
+Completed 200 OK in 1178ms (Views: 1177.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:37:11 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.0ms)
+  Rendered layouts/header/_header.html.slim (2.5ms)
+Completed 200 OK in 1135ms (Views: 1134.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:37:21 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (4.8ms)
+Completed 200 OK in 119ms (Views: 118.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:37:33 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (2.9ms)
+Completed 200 OK in 1281ms (Views: 1280.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:38:37 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (5.2ms)
+Completed 200 OK in 1114ms (Views: 1113.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:38:46 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.8ms)
+  Rendered layouts/header/_header.html.slim (3.5ms)
+Completed 200 OK in 1169ms (Views: 1168.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:39:17 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.3ms)
+  Rendered layouts/header/_header.html.slim (5.3ms)
+Completed 200 OK in 1183ms (Views: 1181.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:40:01 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.3ms)
+  Rendered layouts/header/_header.html.slim (2.5ms)
+Completed 200 OK in 1140ms (Views: 1139.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 15:40:07 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.8ms)
+  Rendered layouts/header/_header.html.slim (2.5ms)
+Completed 200 OK in 81ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:26:24 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (2.7ms)
+Completed 200 OK in 72ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:27:33 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (2.9ms)
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-18 22:34:53 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (6.2ms)
+  Rendered layouts/header/_header.html.slim (3.6ms)
+Completed 200 OK in 1869ms (Views: 1863.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-18 22:35:02 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (5.5ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+Completed 200 OK in 114ms (Views: 113.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:36:13 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.7ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:46:03 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (6.1ms)
+Completed 200 OK in 108ms (Views: 107.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:47:55 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (6.1ms)
+  Rendered layouts/header/_header.html.slim (4.4ms)
+Completed 200 OK in 3615ms (Views: 3609.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:48:41 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.4ms)
+  Rendered layouts/header/_header.html.slim (4.2ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:48:53 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (5.0ms)
+Completed 200 OK in 1662ms (Views: 1661.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:49:42 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.erb (0.5ms)
+Completed 200 OK in 88ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-18 22:49:53 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.8ms)
+  Rendered layouts/header/_header.html.erb (0.2ms)
+Completed 200 OK in 102ms (Views: 101.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:51:57 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (6.4ms)
+  Rendered layouts/header/_header.html.erb (0.9ms)
+Completed 200 OK in 2513ms (Views: 2507.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:52:36 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (3.2ms)
+  Rendered layouts/header/_header.html.slim (8.7ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-18 22:52:42 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (3.5ms)
+  Rendered layouts/header/_header.html.slim (4.0ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:53:07 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.8ms)
+  Rendered layouts/header/_header.html.slim (5.5ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:53:25 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (4.3ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:55:43 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (1.9ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:58:35 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (6.0ms)
+  Rendered layouts/header/_header.html.slim (3.4ms)
+Completed 200 OK in 385ms (Views: 379.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:58:58 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (9.6ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 22:59:03 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (4.2ms)
+Completed 200 OK in 35ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-18 22:59:25 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.7ms)
+  Rendered layouts/header/_header.html.slim (4.2ms)
+Completed 200 OK in 52ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-18 22:59:25 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.5ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:01:48 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: jquery-ui.
+Load paths:
+  /home/panda/workspace/Schooled/app/assets/config
+  /home/panda/workspace/Schooled/app/assets/images
+  /home/panda/workspace/Schooled/app/assets/javascripts
+  /home/panda/workspace/Schooled/app/assets/stylesheets
+  /home/panda/workspace/Schooled/vendor/assets/javascripts
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.2/lib/assets/compiled
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.2/lib/assets/compiled
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/panda/workspace/Schooled/node_modules
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/popper_js-1.10.8/assets/javascripts
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/bundler/gems/bootstrap-rubygem-b156edfee2b9/assets/stylesheets
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/bundler/gems/bootstrap-rubygem-b156edfee2b9/assets/javascripts
+  /home/panda/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/bundler/gems/bootstrap-rubygem-b156edfee2b9/assets/stylesheets):
+    4:     meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    5:     title Schooled
+    6:     = csrf_meta_tags
+    7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    9:     = render 'layouts/header/header'
+   10:   body
+  
+app/assets/stylesheets/application.scss:18
+app/views/layouts/application.html.slim:7:in `_app_views_layouts_application_html_slim__2013226626636615263_70185441171060'
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:02:13 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (3.8ms)
+Completed 200 OK in 2363ms (Views: 2362.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:17:40 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (5.0ms)
+Completed 200 OK in 770ms (Views: 769.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:22:59 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (6.7ms)
+  Rendered layouts/header/_header.html.slim (4.4ms)
+Completed 200 OK in 1783ms (Views: 1777.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:23:27 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.1ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:23:34 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.3ms)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-18 23:25:16 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.5ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-18 23:25:40 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (2.7ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:27:30 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (4.0ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-18 23:27:37 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.2ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:30:01 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-18 23:30:07 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.7ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:37:28 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (10.4ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:37:52 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (3.2ms)
+  Rendered layouts/header/_footer.html.slim (1.4ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:38:26 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (3.1ms)
+  Rendered layouts/header/_footer.html.slim (1.5ms)
+Completed 200 OK in 1301ms (Views: 1299.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:38:40 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (4.8ms)
+  Rendered layouts/header/_footer.html.slim (1.7ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:38:52 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.8ms)
+  Rendered layouts/header/_header.html.slim (8.2ms)
+  Rendered layouts/header/_footer.html.slim (2.4ms)
+Completed 200 OK in 1239ms (Views: 1238.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:39:43 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:40:03 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.8ms)
+  Rendered layouts/header/_header.html.slim (2.9ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:40:20 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.1ms)
+  Rendered layouts/header/_footer.html.slim (1.7ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:41:10 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.1ms)
+  Rendered layouts/header/_header.html.slim (4.3ms)
+  Rendered layouts/header/_footer.html.slim (2.3ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:42:41 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.1ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:43:35 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.8ms)
+  Rendered layouts/header/_header.html.slim (3.3ms)
+  Rendered layouts/header/_footer.html.slim (1.5ms)
+Completed 200 OK in 38ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:44:02 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (9.1ms)
+  Rendered layouts/header/_footer.html.slim (2.7ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:44:28 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (4.0ms)
+  Rendered layouts/header/_footer.html.slim (1.8ms)
+Completed 200 OK in 1228ms (Views: 1227.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:45:08 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (7.0ms)
+  Rendered layouts/header/_footer.html.slim (2.8ms)
+Completed 200 OK in 1134ms (Views: 1133.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:45:31 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.1ms)
+  Rendered layouts/header/_header.html.slim (2.8ms)
+  Rendered layouts/header/_footer.html.slim (1.4ms)
+Completed 200 OK in 1178ms (Views: 1177.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:45:37 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.3ms)
+  Rendered layouts/header/_header.html.slim (2.8ms)
+  Rendered layouts/header/_footer.html.slim (1.5ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:45:46 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (2.9ms)
+  Rendered layouts/header/_footer.html.slim (1.5ms)
+Completed 200 OK in 1064ms (Views: 1063.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:46:01 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.1ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+  Rendered layouts/header/_footer.html.slim (1.5ms)
+Completed 200 OK in 1064ms (Views: 1062.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:46:10 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (2.9ms)
+  Rendered layouts/header/_footer.html.slim (1.5ms)
+Completed 200 OK in 1073ms (Views: 1072.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:46:28 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.1ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 1077ms (Views: 1076.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:46:41 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.9ms)
+  Rendered layouts/header/_header.html.slim (3.2ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 1141ms (Views: 1140.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:47:41 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (2.7ms)
+  Rendered layouts/header/_footer.html.slim (1.4ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:50:42 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (3.2ms)
+  Rendered layouts/header/_footer.html.slim (2.3ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:51:54 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (3.7ms)
+  Rendered layouts/header/_header.html.slim (4.4ms)
+  Rendered layouts/header/_footer.html.slim (2.3ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:52:02 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (3.2ms)
+  Rendered layouts/header/_footer.html.slim (1.7ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:52:57 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (3.7ms)
+  Rendered layouts/header/_footer.html.slim (2.1ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:53:13 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (4.7ms)
+  Rendered layouts/header/_footer.html.slim (2.0ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:53:28 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.3ms)
+  Rendered layouts/header/_footer.html.slim (1.8ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:53:51 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (2.7ms)
+  Rendered layouts/header/_footer.html.slim (2.3ms)
+Completed 200 OK in 1163ms (Views: 1162.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:54:08 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.5ms)
+  Rendered layouts/header/_footer.html.slim (1.9ms)
+Completed 200 OK in 1135ms (Views: 1134.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:54:32 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.1ms)
+  Rendered layouts/header/_header.html.slim (3.4ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 1186ms (Views: 1185.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:55:26 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.0ms)
+  Rendered layouts/header/_header.html.slim (2.9ms)
+  Rendered layouts/header/_footer.html.slim (2.3ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:55:53 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.0ms)
+  Rendered layouts/header/_header.html.slim (3.7ms)
+  Rendered layouts/header/_footer.html.slim (2.4ms)
+Completed 200 OK in 1072ms (Views: 1071.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:56:20 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.0ms)
+  Rendered layouts/header/_header.html.slim (2.9ms)
+  Rendered layouts/header/_footer.html.slim (2.6ms)
+Completed 200 OK in 1041ms (Views: 1040.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:56:32 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.0ms)
+  Rendered layouts/header/_header.html.slim (3.8ms)
+  Rendered layouts/header/_footer.html.slim (1.8ms)
+Completed 200 OK in 1120ms (Views: 1119.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:56:41 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.9ms)
+  Rendered layouts/header/_header.html.slim (2.6ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 1215ms (Views: 1214.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:56:47 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (4.9ms)
+  Rendered layouts/header/_footer.html.slim (3.4ms)
+Completed 200 OK in 1153ms (Views: 1151.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:56:57 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (3.1ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+  Rendered layouts/header/_footer.html.slim (2.6ms)
+Completed 200 OK in 1194ms (Views: 1192.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-18 23:59:24 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.9ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 1166ms (Views: 1165.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:00:00 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.2ms)
+  Rendered layouts/header/_header.html.slim (3.1ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:00:07 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.9ms)
+  Rendered layouts/header/_header.html.slim (2.8ms)
+  Rendered layouts/header/_footer.html.slim (1.7ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:00:17 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.0ms)
+  Rendered layouts/header/_header.html.slim (2.5ms)
+  Rendered layouts/header/_footer.html.slim (1.5ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:02:18 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (2.7ms)
+  Rendered layouts/header/_footer.html.slim (1.5ms)
+Completed 200 OK in 1055ms (Views: 1054.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:02:57 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (2.8ms)
+  Rendered layouts/header/_footer.html.slim (1.5ms)
+Completed 200 OK in 1105ms (Views: 1104.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:03:11 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (2.8ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 1040ms (Views: 1039.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:03:45 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.3ms)
+  Rendered layouts/header/_header.html.slim (2.8ms)
+  Rendered layouts/header/_footer.html.slim (1.8ms)
+Completed 200 OK in 1132ms (Views: 1131.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:03:56 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.3ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+  Rendered layouts/header/_footer.html.slim (1.7ms)
+Completed 200 OK in 1087ms (Views: 1084.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-19 00:04:13 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.3ms)
+  Rendered layouts/header/_header.html.slim (2.8ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 54ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:05:27 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+  Rendered layouts/header/_footer.html.slim (1.8ms)
+Completed 200 OK in 1117ms (Views: 1116.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:05:40 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.3ms)
+  Rendered layouts/header/_header.html.slim (5.9ms)
+  Rendered layouts/header/_footer.html.slim (3.0ms)
+Completed 200 OK in 1136ms (Views: 1135.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:05:49 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.8ms)
+  Rendered layouts/header/_header.html.slim (2.7ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 1111ms (Views: 1109.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:06:25 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.7ms)
+  Rendered layouts/header/_header.html.slim (2.5ms)
+  Rendered layouts/header/_footer.html.slim (1.7ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:06:41 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+  Rendered layouts/header/_footer.html.slim (1.7ms)
+Completed 200 OK in 1141ms (Views: 1140.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:07:03 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.4ms)
+  Rendered layouts/header/_footer.html.slim (1.9ms)
+Completed 200 OK in 1018ms (Views: 1017.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:07:15 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.6ms)
+  Rendered layouts/header/_footer.html.slim (1.8ms)
+Completed 200 OK in 60ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:08:09 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (2.4ms)
+  Rendered layouts/header/_header.html.slim (2.9ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 1148ms (Views: 1146.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:08:16 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+  Rendered layouts/header/_footer.html.slim (1.8ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:08:38 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (3.1ms)
+  Rendered layouts/header/_footer.html.slim (1.7ms)
+Completed 200 OK in 1015ms (Views: 1014.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:08:56 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (2.5ms)
+  Rendered layouts/header/_footer.html.slim (1.5ms)
+Completed 200 OK in 1113ms (Views: 1112.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:11:20 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.3ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+  Rendered layouts/header/_footer.html.slim (1.8ms)
+Completed 200 OK in 1039ms (Views: 1038.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:11:42 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.3ms)
+  Rendered layouts/header/_header.html.slim (2.5ms)
+  Rendered layouts/header/_footer.html.slim (1.5ms)
+Completed 200 OK in 1142ms (Views: 1141.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:12:00 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.2ms)
+  Rendered layouts/header/_footer.html.slim (1.9ms)
+Completed 200 OK in 1068ms (Views: 1067.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:12:11 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (2.8ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 1151ms (Views: 1150.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:12:33 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.3ms)
+  Rendered layouts/header/_header.html.slim (2.8ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 1018ms (Views: 1017.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:12:47 +0300
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.5ms)
+  Rendered layouts/header/_header.html.slim (2.5ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 1156ms (Views: 1154.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-19 00:17:37 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (2.9ms)
+  Rendered layouts/header/_footer.html.slim (1.7ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-19 00:17:52 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.4ms)
+  Rendered layouts/header/_header.html.slim (2.8ms)
+  Rendered layouts/header/_footer.html.slim (1.6ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-19 00:17:55 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.3ms)
+  Rendered layouts/header/_header.html.slim (2.6ms)
+  Rendered layouts/header/_footer.html.slim (2.2ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-19 00:17:58 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (2.7ms)
+  Rendered layouts/header/_footer.html.slim (1.7ms)
+Completed 200 OK in 67ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.103 at 2017-07-19 00:17:59 +0300
+Cannot render console from 192.168.0.103! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (1.6ms)
+  Rendered layouts/header/_header.html.slim (3.4ms)
+  Rendered layouts/header/_footer.html.slim (1.9ms)
+Completed 200 OK in 32ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-19 00:21:11 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticsController#home as HTML
+  Rendering statics/home.html.slim within layouts/application
+  Rendered statics/home.html.slim within layouts/application (5.6ms)
+  Rendered layouts/header/_header.html.slim (10.0ms)
+  Rendered layouts/header/_footer.html.slim (4.7ms)
+Completed 200 OK in 278ms (Views: 272.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schools/new" for 127.0.0.1 at 2017-07-19 00:33:35 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SchoolsController#new as HTML
+  Rendering schools/new.html.slim within layouts/application
+  Rendered schools/_form.html.slim (36.7ms)
+  Rendered schools/new.html.slim within layouts/application (43.7ms)
+  Rendered layouts/header/_header.html.slim (3.1ms)
+  Rendered layouts/header/_footer.html.slim (1.8ms)
+Completed 200 OK in 300ms (Views: 284.2ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/schools" for 127.0.0.1 at 2017-07-19 00:33:40 +0300
+Processing by SchoolsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EdHYadimCemta9fbb8TlQTQl+KmWy9nvcqaee5mTXh+qRZn7VNxOxAkbPP2mO4AsRrY5SoFHCoBCyHcKjBVD+w==", "commit"=>"Create School"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schools" DEFAULT VALUES RETURNING "id"[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/schools/1
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/schools/1" for 127.0.0.1 at 2017-07-19 00:33:40 +0300
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering schools/show.html.slim within layouts/application
+  Rendered schools/show.html.slim within layouts/application (2.6ms)
+  Rendered layouts/header/_header.html.slim (3.5ms)
+  Rendered layouts/header/_footer.html.slim (1.7ms)
+Completed 200 OK in 49ms (Views: 44.4ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "schools"[0m
+Started POST "/schools" for 127.0.0.1 at 2017-07-19 00:35:10 +0300
+Processing by SchoolsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EdHYadimCemta9fbb8TlQTQl+KmWy9nvcqaee5mTXh+qRZn7VNxOxAkbPP2mO4AsRrY5SoFHCoBCyHcKjBVD+w==", "commit"=>"Create School"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schools" DEFAULT VALUES RETURNING "id"[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/schools/2
+Completed 302 Found in 5ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/schools/2" for 127.0.0.1 at 2017-07-19 00:35:10 +0300
+Processing by SchoolsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering schools/show.html.slim within layouts/application
+  Rendered schools/show.html.slim within layouts/application (2.2ms)
+  Rendered layouts/header/_header.html.slim (3.3ms)
+  Rendered layouts/header/_footer.html.slim (1.8ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2017-07-19 00:35:13 +0300
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.slim within layouts/application
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.slim within layouts/application (4.1ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+  Rendered layouts/header/_footer.html.slim (1.8ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/schools/1" for 127.0.0.1 at 2017-07-19 00:35:17 +0300
+Processing by SchoolsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"83Ue0ciMGKyhug9w3Ip73zw0zvBIHFBjGpoRQGUeughI4V9DRPZfgQXK5FYVdR6yTqcPE1+Qgwwq9PgxcJin7A==", "id"=>"1"}
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = $1[0m  [["id", 1]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/schools
+Completed 302 Found in 5ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2017-07-19 00:35:17 +0300
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.slim within layouts/application
+  [1m[36mSchool Load (0.3ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.slim within layouts/application (4.5ms)
+  Rendered layouts/header/_header.html.slim (3.2ms)
+  Rendered layouts/header/_footer.html.slim (1.8ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/schools/2" for 127.0.0.1 at 2017-07-19 00:35:20 +0300
+Processing by SchoolsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"u+HkGlu3TbIO49NRVdXXBrgg3gq06LQMtyBBW2MvCFkAdaWI180Kn6qTOHecKrJryrMf6aNkZ2OHTqgqdqkVvQ==", "id"=>"2"}
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "schools" WHERE "schools"."id" = $1[0m  [["id", 2]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/schools
+Completed 302 Found in 5ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2017-07-19 00:35:20 +0300
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.slim within layouts/application
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT "schools".* FROM "schools"[0m
+  Rendered schools/index.html.slim within layouts/application (4.0ms)
+  Rendered layouts/header/_header.html.slim (3.0ms)
+  Rendered layouts/header/_footer.html.slim (1.7ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.2ms)
+
+
