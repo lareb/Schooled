@@ -76,8 +76,8 @@ ActiveRecord::Schema.define(version: 20170717192448) do
     t.bigint "school_id"
     t.bigint "role_id"
     t.string "name"
-    t.string "password"
     t.string "email"
+    t.string "password_digest"
     t.index ["role_id"], name: "index_users_on_role_id"
     t.index ["school_id"], name: "index_users_on_school_id"
   end
