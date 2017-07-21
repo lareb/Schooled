@@ -13,7 +13,171 @@
  *= require_tree .
  *= require_self
  */
-
-// @import "jquery-ui";
+@import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Poppins|Ubuntu|Cabin+Sketch');
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+#content{
+	padding-top: 75px;
+	min-height: 100vh;
+}
+nav.navbar .brand{
+	z-index: -9;
+	font-family: 'Cabin Sketch', cursive;
+}
+nav.navbar{
+	padding-top: 10px;
+}
+nav.navbar a{
+	font-weight: bold;
+	padding: 10px 20px;
+	color: #104b6a;
+}
+nav.navbar .navbar-toggle{
+	border: 1px solid #2e7aa2;
+	margin-top: 2px;
+}
+nav.navbar .navbar-toggle span{
+	border: 1px solid #2e7aa2;
+}
+@media (max-width: 768px) {
+	nav.navbar .navbar-collapse{
+		background-color: #2e7aa2;
+		padding: 20px 0px;
+	}
+	nav.navbar .navbar-collapse a{
+		color: white;
+		border-radius: 0px;
+		padding: 15px 30px;
+	}
+	nav .navbar-collapse a:hover, .navbar-collapse a:active{
+		background-color: #3C6478;
+	}
+}
+a.important{
+	border-radius: 20px;
+	border: 1px solid #2e7aa2;
+}
+#content a, #content .btn{
+	font-weight: bold !important;
+	margin-right: 20px;
+	color: #104b6a;
+}
+.footer{
+	background-color: rgb(14, 81, 117);
+	color: white !important;
+	font-weight: bold !important;
+	padding: 20px;
+	z-index: 1000;
+	b{
+		font-size: 18px;
+	}
+	i{
+		padding-right: 20px;
+	}
+}
+table thead tr th{
+	padding: 20px;
+	border: 2px solid white;
+	background-color: #2e7aa2;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+table{
+	border: 0px !important;
+}
+table tbody tr td{
+	padding: 20px 0px;
+	font-size: 15px;
+}
+h1{
+	font-size: 15px;
+	padding: 23px 15px;
+	border: 2px solid white !important;
+	background-color: #2e7aa2;
+	color: white;
+	font-weight: bold;
+	margin: 0px 0px 30px 0px;
+}
+.sidebar{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #2e7aa2;
+	overflow: hidden;
+	height: 100vh;
+	padding: 0px;
+	z-index: 10;
+	color: white;
+	font-weight: bold;
+
+	.content{
+		padding-top: 75px;
+		height: 100%;
+		width: calc(100% + 15px);
+		overflow-y: scroll;
+	}
+	.logo{
+		position: absolute;
+		padding: 20px;
+		font-size: 15px;
+	}
+	.personal{
+		padding: 15px;
+		position: relative;
+		overflow: hidden;
+		background-color: rgb(14, 81, 117);
+		.image{
+			padding: 0px;
+		}
+		.image i{
+			font-size: 100px;
+			width: 100px;
+			height: 100px;
+			margin: auto auto;
+		}
+		.info{
+			font-weight: bold;
+			padding: 0px;
+			.footer{
+				background-color: transparent;
+				padding: 20px 0px;
+				a{
+					padding: 0px 15px;
+					color: white;
+				}
+			}
+		}
+	}
+	.easy-access{
+		a{
+			padding: 10px;
+			color: white;
+			text-align: center;
+			span{
+				font-size: 15px;
+			}
+			i{
+				padding: 10px;
+				font-size: 25px;
+			}
+		}
+	}
+	.sidebar-footer{
+		position: absolute;
+		bottom: 0px;
+		background-color: transparent;
+		b{
+			line-height: 30px;
+		}
+		i{
+			font-size: 20px;
+			padding: 0px 15px 10px 15px;
+		}
+	}
+}
