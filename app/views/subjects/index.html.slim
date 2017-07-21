@@ -1,18 +1,19 @@
-h1 Listing subjects
-
-table
+table.table-responsive.col-xs-12
   thead
     tr
-      th
-      th
-      th
+      th.col-xs-4 Name
+      th.col-xs-4 Grade
+      th.col-xs-4 Actions
 
   tbody
     - @subjects.each do |subject|
       tr
-        td = link_to 'Show', subject
-        td = link_to 'Edit', edit_subject_path(subject)
-        td = link_to 'Destroy', subject, data: { confirm: 'Are you sure?' }, method: :delete
+        td.col-xs-4 = subject.name
+        td.col-xs-4 = subject.grade
+        td.col-xs-4 
+          = link_to 'Show', subject
+          = link_to 'Edit', edit_subject_path(subject)
+          = link_to 'Destroy', subject, data: { confirm: 'Are you sure?' }, method: :delete
 
 br
 

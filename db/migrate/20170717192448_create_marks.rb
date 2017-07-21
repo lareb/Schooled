@@ -6,6 +6,8 @@ class CreateMarks < ActiveRecord::Migration[5.1]
       t.string :mark
       t.boolean :approved
       t.string :description
+
+      t.timestamps
     end
   end
 end

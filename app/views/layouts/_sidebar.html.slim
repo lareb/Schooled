@@ -1,0 +1,24 @@
+.sidebar.col-xs-10.col-sm-8.col-md-3
+	.logo SCHOOLED
+	.content
+		.personal
+			.image.col-xs-4
+				i.fa.fa-user-circle-o
+			.info.col-xs-8
+				.name.col-xs-12 Kristiyan Tsvetanov
+				.title.col-xs-6 Student
+				.footer.col-xs-12
+					= link_to 'Settings', root_url
+					= link_to 'Log out', root_url
+		.col-xs-12.easy-access
+			= link_to root_path, :class => "col-xs-6" do
+				i.fa.fa-envelope-open-o.col-xs-12 
+				span.col-xs-12 Messeges
+			= link_to root_path, :class => "col-xs-6" do
+				i.fa.fa-bell-o.col-xs-12 
+				span.col-xs-12 Alerts
+	.sidebar-footer.col-xs-12
+	  b Moonhythe Ltd. 2017
+	  .pull-right
+		  i.fa.fa-2x.fa-facebook
+		  i.fa.fa-2x.fa-linkedin

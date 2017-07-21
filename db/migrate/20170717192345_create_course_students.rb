@@ -1,4 +1,4 @@
-class CreateCourseUsers < ActiveRecord::Migration[5.1]
+class CreateCourseStudents < ActiveRecord::Migration[5.1]
   def change
     create_join_table :courses, :users do |t|
     	t.references :course,        index: true
