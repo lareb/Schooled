@@ -1,27 +1,19 @@
 class UsersController < ApplicationController
 
-  # GET /users
-  # GET /users.json
   def index
     @users = User.all
   end
 
-  # GET /users/1
-  # GET /users/1.json
   def show
   end
 
-  # GET /users/new
   def new
     @user = User.new
   end
 
-  # GET /users/1/edit
   def edit
   end
 
-  # POST /users
-  # POST /users.json
   def create
     @user = User.new(create_params)
     if @user.save
@@ -32,8 +24,6 @@ class UsersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /users/1
-  # PATCH/PUT /users/1.json
   def update
     respond_to do |format|
       if current_user.update(update_params)
@@ -46,8 +36,6 @@ class UsersController < ApplicationController
     end
   end
 
-  # DELETE /users/1
-  # DELETE /users/1.json
   def destroy
     @user.destroy
     respond_to do |format|
@@ -57,7 +45,6 @@ class UsersController < ApplicationController
   end
 
   private
-    # Never trust parameters from the scary internet, only allow the white list through.
   def create_params
     params.require(:user).permit(:email, :name, :password, :password_confirmation)
   end
