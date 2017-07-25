@@ -25,17 +25,24 @@ body{
 	padding-top: 75px;
 	min-height: 100vh;
 }
-nav.navbar .brand{
-	z-index: -9;
+nav.navbar{
+	padding: 10px 20px 0px 0px;
+}
+nav.navbar a.navbar-brand{
+	padding: 10px 15px;
+	font-weight: bold;
+	color: #104b6a;
 	font-family: 'Cabin Sketch', cursive;
 }
-nav.navbar{
-	padding-top: 10px;
-}
-nav.navbar a{
+nav.navbar .navbar-collapse a{
 	font-weight: bold;
-	padding: 10px 20px;
 	color: #104b6a;
+	padding: 10px 15px;
+	border-radius: 20px;
+}
+nav.navbar .navbar-collapse a:hover{
+	background-color: #2e7aa2;
+	color: white;
 }
 nav.navbar .navbar-toggle{
 	border: 1px solid #2e7aa2;
@@ -135,6 +142,10 @@ h1{
 		.image{
 			padding: 0px;
 		}
+		.name a{
+			color: white;
+			font-size: 15px;
+		}
 		.image i{
 			font-size: 100px;
 			width: 100px;
@@ -179,5 +190,14 @@ h1{
 			font-size: 20px;
 			padding: 0px 15px 10px 15px;
 		}
+	}
+}
+
+ul.register-options{
+	li{
+		float: left;
+		list-style: none;
+		text-align: center;
+		font-weight: bold;
 	}
 }

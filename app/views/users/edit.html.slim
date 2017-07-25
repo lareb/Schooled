@@ -1,21 +1,12 @@
-h1 Register
+h1 Settings
 
-
-ul.register-options.col-xs-12
-	li.col-xs-4 Student
-	li.col-xs-4 Parent
-	li.col-xs-4 Teacher
-
-
-= simple_form_for(@user) do |f|
+= simple_form_for(current_user) do |f|
   = f.error_notification
 
   .form-inputs
-  	= f.input :email
   	= f.input :name
   	= f.input :password
   	= f.input :password_confirmation
 
   .form-actions
     = f.button :submit
-

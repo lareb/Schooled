@@ -6,8 +6,12 @@ html
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-    / = render 'layouts/header/header'
   body
-    = render 'layouts/sidebar'
-    #content.col-xs-12.col-md-8.col-md-offset-3.col-lg-7.col-lg-offset-4
-      = yield
+    - if current_user
+      = render 'layouts/sidebar'
+      #content.col-xs-12.col-md-8.col-md-offset-3.col-lg-7.col-lg-offset-4
+        = yield
+    - else
+      = render 'layouts/header/header'
+      #content.col-xs-12.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3
+        = yield

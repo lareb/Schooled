@@ -109,13 +109,10 @@ ActiveRecord::Schema.define(version: 20170720121346) do
     t.bigint "group_id"
     t.string "name"
     t.string "email"
-<<<<<<< HEAD
     t.string "password_digest"
-=======
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["group_id"], name: "index_users_on_group_id"
->>>>>>> Controllers
     t.index ["role_id"], name: "index_users_on_role_id"
     t.index ["school_id"], name: "index_users_on_school_id"
   end

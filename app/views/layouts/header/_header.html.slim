@@ -1,4 +1,3 @@
-/ if user not logged in
 nav.navbar.navbar-fixed-top
   .container-fluid
     .navbar-header
@@ -10,6 +9,6 @@ nav.navbar.navbar-fixed-top
     #collapse-navbar-1.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li
-          a href="#"  New user
+          = link_to 'New user', signup_path
         li 
-          a.important href="#"  Log in
+          = link_to 'Log in', login_path, class: 'important'
