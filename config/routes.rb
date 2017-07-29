@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'logout', to: 'sessions#destroy', as: 'logout'
   get 'signup', to: 'users#new', as: 'signup'
 
+  resource :users
   resource :sessions, only: [:new, :create, :destroy]
   resources :schools do
     resources :groups do

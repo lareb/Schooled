@@ -33,22 +33,22 @@ ActiveRecord::Schema.define(version: 20170722112315) do
     t.index ["group_id"], name: "index_course_groups_on_group_id"
   end
 
-  create_table "courses", force: :cascade do |t|
-    t.bigint "subject_id"
-    t.bigint "school_id"
-    t.date "year"
-    t.index ["school_id"], name: "index_courses_on_school_id"
-    t.index ["subject_id"], name: "index_courses_on_subject_id"
-  end
-
-  create_table "courses_users", id: false, force: :cascade do |t|
+  create_table "course_students", id: false, force: :cascade do |t|
     t.bigint "course_id"
     t.bigint "user_id"
     t.float "first_term_mark"
     t.float "second_term_mark"
     t.float "final_mark"
-    t.index ["course_id"], name: "index_courses_users_on_course_id"
-    t.index ["user_id"], name: "index_courses_users_on_user_id"
+    t.index ["course_id"], name: "index_course_students_on_course_id"
+    t.index ["user_id"], name: "index_course_students_on_user_id"
+  end
+
+  create_table "courses", force: :cascade do |t|
+    t.bigint "subject_id"
+    t.bigint "school_id"
+    t.integer "year"
+    t.index ["school_id"], name: "index_courses_on_school_id"
+    t.index ["subject_id"], name: "index_courses_on_subject_id"
   end
 
   create_table "groups", force: :cascade do |t|

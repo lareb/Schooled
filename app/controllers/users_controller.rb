@@ -1,6 +1,17 @@
 class UsersController < ApplicationController
+
+  def index
+    @users = User.all
+  end
+
+  def show
+  end
+
   def new
     @user = User.new
+  end
+
+  def edit
   end
 
   def create
@@ -13,9 +24,32 @@ class UsersController < ApplicationController
     end
   end
 
-  private
+  def update
+    respond_to do |format|
+      if current_user.update(update_params)
+        format.html { redirect_to current_user, notice: 'User was successfully updated.' }
+        format.json { render :show, status: :ok, location: current_user }
+      else
+        format.html { render :edit }
+        format.json { render json: current_user.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
+  def destroy
+    @user.destroy
+    respond_to do |format|
+      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
+  private
   def create_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:user).permit(:email, :name, :password, :password_confirmation)
+  end
+
+  def update_params
+    params.require(:user).permit(:name, :password, :password_confirmation)
   end
 end

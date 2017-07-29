@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_many :courses, through: :course_students
   has_many :teaching_groups, through: :course_group_teacher, class_name: 'CourseGroup'
 
-  enum role: { student: 0, teacher: 1, moderator: 2, director: 3 }
+  enum role: { student: 0, teacher: 1, moderator: 2, headmaster: 3 }
 
   has_secure_password
   validates :email, uniqueness: true, presence: true

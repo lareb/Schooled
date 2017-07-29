@@ -1,18 +1,48 @@
 require 'test_helper'
 
 class UsersControllerTest < ActionDispatch::IntegrationTest
-  test 'that you can register' do
-    get new_users_path
-    assert 200, status
+  setup do
+    @user = users(:one)
+  end
 
-    post users_path, params: {
-      user: {
-        email: 'pesho@abv.bg',
-        password: '123123',
-        password_confirmation: '123123'
-      }
-    }
+  test "should get index" do
+    get users_url
+    assert_response :success
+  end
 
-    assert User.find_by(email: 'pesho@abv.bg')
+  test "should get new" do
+    get new_user_url
+    assert_response :success
+  end
+
+  test "should create user" do
+    assert_difference('User.count') do
+      post users_url, params: { user: {  } }
+    end
+
+    assert_redirected_to user_url(User.last)
+  end
+
+  test "should show user" do
+    get user_url(@user)
+    assert_response :success
+  end
+
+  test "should get edit" do
+    get edit_user_url(@user)
+    assert_response :success
+  end
+
+  test "should update user" do
+    patch user_url(@user), params: { user: {  } }
+    assert_redirected_to user_url(@user)
+  end
+
+  test "should destroy user" do
+    assert_difference('User.count', -1) do
+      delete user_url(@user)
+    end
+
+    assert_redirected_to users_url
   end
 end
