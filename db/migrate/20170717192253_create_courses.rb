@@ -3,7 +3,7 @@ class CreateCourses < ActiveRecord::Migration[5.1]
     create_table :courses do |t|
     	t.references :subject,        index: true
     	t.references :school,         index: true
-      t.date :year
+      t.integer :year
     end
   end
 end

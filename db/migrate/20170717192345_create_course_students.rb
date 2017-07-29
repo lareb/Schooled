@@ -1,6 +1,6 @@
 class CreateCourseStudents < ActiveRecord::Migration[5.1]
   def change
-    create_join_table :courses, :users do |t|
+    create_join_table :courses, :users, table_name: :course_students do |t|
       t.references :course,        index: true
       t.references :user,          index: true
       t.float :first_term_mark

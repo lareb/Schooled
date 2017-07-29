@@ -5,10 +5,11 @@
 			.image.col-xs-4
 				i.fa.fa-user-circle-o
 			.info.col-xs-8
-				.name.col-xs-12 = link_to current_user.try(:name) || current_user.email, user_path(current_user)
-				.title.col-xs-6 = current_user.role.try(:title)
+				.name.col-xs-12 = link_to current_user.try(:name) || current_user.email, users_path(current_user)
+				.role.col-xs-12 = "#{current_user.role} at #{current_user.school.name}" if current_user.school
+				.role.col-xs-6 
 				.footer.col-xs-12
-					= link_to 'Settings', edit_user_path(current_user)
+					= link_to 'Settings', edit_users_path(current_user)
 					= link_to 'Log out', logout_path
 		.col-xs-12.easy-access
 			= link_to root_path, :class => "col-xs-6" do
