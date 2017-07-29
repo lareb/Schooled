@@ -1,7 +1,34 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+puts "Generating seeds..."
+
+User.find_or_create_by([
+           {name: 'Kristiyan Tsvetanov',
+            email: 'kris@example.com', password: 'password',
+            password_confirmation: 'password', admin: true}
+])
+User.find_or_create_by([
+           {name: 'Nikola Jichev',
+            email: 'niko@example.com', password: 'password',
+            password_confirmation: 'password', admin: true}
+])
+User.find_or_create_by([
+           {name: 'Antony Stoyanov',
+            email: 'tonkata@example.com', password: 'password',
+            password_confirmation: 'password', admin: false}
+])
+User.find_or_create_by([
+           {name: 'Veliko Kolev',
+            email: 'kolev@example.com', password: 'password',
+            password_confirmation: 'password', admin: false}
+])
+User.find_or_create_by([
+           {name: 'Ivancho',
+            email: 'ivancho@example.com', password: 'password',
+            password_confirmation: 'password', admin: false}
+])
+School.find_or_create_by([
+           {name: 'Sofia High School of Mathematics',
+            address: 'Sofia', 
+          	phone_number: '0885955926'}
+])
+
+puts 'Done ...'
