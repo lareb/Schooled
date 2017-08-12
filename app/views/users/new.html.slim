@@ -1,21 +1,66 @@
-h1 Register
+h1.initial Register as a
+
+.form-student
+  center = image_tag("student.png")
+  = simple_form_for @user do |f|
+    = f.error_notification
+
+    .form-inputs
+      = f.input :email
+      = f.input :name
+      = f.input :password
+      = f.input :password_confirmation
+      = f.association :school, collection: School.order(:name)
+      = f.input :group, collection: School.order(:name),
+                           as: :grouped_select,
+                           group_method: :groups,
+                           group_label_method: :name,
+                           label_method: lambda { |group| "#{group.grade}#{group.name}" },
+                           include_blank: "Please Choose",
+                           hint: "For #{Time.now.year}/#{Time.now.year+1}"
+      = f.input :address, hint: "For verification purposes."
+
+    .form-actions
+      = f.button :submit, 'Register'
+
+.form-parent
+  center = image_tag("parent.png")
+  = simple_form_for @user do |f|
+    = f.error_notification
+
+    .form-inputs
+      = f.input :email
+      = f.input :name
+      = f.input :password
+      = f.input :password_confirmation
+
+    .form-actions
+      = f.button :submit
+
+.form-teacher
+  center = image_tag("teacher.png")
+  = simple_form_for @user do |f|
+    = f.error_notification
+
+    .form-inputs
+      = f.input :email
+      = f.input :name
+      = f.input :password
+      = f.input :password_confirmation
+      = f.association :school, collection: School.order(:name)
+
+    .form-actions
+      = f.button :submit
 
 
-ul.register-options.col-xs-12
-	li.col-xs-4 Student
-	li.col-xs-4 Parent
-	li.col-xs-4 Teacher
 
-
-= simple_form_for(@user) do |f|
-  = f.error_notification
-
-  .form-inputs
-  	= f.input :email
-  	= f.input :name
-  	= f.input :password
-  	= f.input :password_confirmation
-
-  .form-actions
-    = f.button :submit
-
+.register-options.col-xs-12
+  a.col-xs-4.student
+    = image_tag("student.png")
+    b Student
+  a.col-xs-4.parent
+    = image_tag("parent.png")
+    b Parent
+  a.col-xs-4.teacher
+    = image_tag("teacher.png")
+    b Teacher

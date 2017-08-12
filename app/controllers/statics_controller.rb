@@ -14,4 +14,8 @@ class StaticsController < ApplicationController
   def contacts
 
   end
+
+  def credits
+
+  end
 end

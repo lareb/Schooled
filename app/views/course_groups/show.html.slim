@@ -22,5 +22,7 @@ h1
 	    - @students.each do |student|
 	    	= render 'student_row', student: student
 - if current_user.student?
+	h3 Your marks
+	hr
 	- current_user.marks.where(course_id: @course_group.course).each do |mark|
-		= mark.mark
+		.marks = mark.mark
