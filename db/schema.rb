@@ -89,9 +89,11 @@ ActiveRecord::Schema.define(version: 20170722112315) do
     t.bigint "school_id"
     t.bigint "group_id"
     t.integer "role", default: 0
+    t.integer "number"
     t.boolean "admin", default: false
     t.string "name"
     t.string "email"
+    t.string "address"
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

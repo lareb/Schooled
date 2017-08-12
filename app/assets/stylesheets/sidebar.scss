@@ -1,0 +1,88 @@
+.sidebar{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #2e7aa2;
+	overflow: hidden;
+	height: 100vh;
+	padding: 0px;
+	z-index: 10;
+	color: white;
+	font-weight: bold;
+
+	.content{
+		padding-top: 75px;
+		height: 100%;
+		width: calc(100% + 15px);
+		overflow-y: scroll;
+	}
+	.logo{
+		position: absolute;
+		padding: 20px;
+		font-size: 15px;
+	}
+	.personal{
+		padding: 15px;
+		position: relative;
+		overflow: hidden;
+		background-color: rgb(14, 81, 117);
+		.image{
+			padding: 0px;
+		}
+		.name a{
+			color: white;
+			font-size: 15px;
+		}
+		.image i{
+			font-size: 100px;
+			width: 100px;
+			height: 100px;
+			margin: auto auto;
+		}
+		.info{
+			font-weight: bold;
+			padding: 0px;
+			height: 100px;
+			min-width: 200px;
+			.footer{
+				background-color: transparent;
+				padding: 0px;
+				position: absolute;
+				bottom: 0px;
+				a{
+					padding: 0px 15px;
+					color: white;
+				}
+			}
+		}
+	}
+	.easy-access{
+		a{
+			padding: 10px;
+			color: white;
+			text-align: center;
+			span{
+				font-size: 15px;
+			}
+			i{
+				padding: 10px;
+				font-size: 25px;
+			}
+		}
+	}
+	.sidebar-footer{
+		position: absolute;
+		bottom: 0px;
+		background-color: transparent;
+		b{
+			line-height: 30px;
+			a{
+				color: white;
+			}
+		}
+		i{
+			font-size: 20px;
+			padding: 0px 15px 10px 15px;
+		}
+	}
+}
