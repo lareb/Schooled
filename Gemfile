@@ -35,6 +35,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'slim-rails'
+gem 'mailboxer'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

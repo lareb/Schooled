@@ -4,25 +4,41 @@ h1
 		- @course_group.teachers.each do |teacher|
 			= teacher.name
 
-.homework.col-xs-12.col-md-6
+.homework.col-xs-12 class="#{current_user.teacher? ? 'col-md-6' : 'col-md-12'}"
 	.content
 		.header 
 			| Homework
-			= link_to root_path, class: 'pull-right' do
-				i.fa.fa-plus
-.notes.col-xs-12.col-md-6
-	.content
-		.header 
-			| Messages
-			= link_to root_path, class: 'pull-right' do
-				i.fa.fa-plus
+			- if current_user.teacher? 
+				= link_to root_path, class: 'pull-right' do
+					i.fa.fa-plus
+		.body
+			- @homework.each do |homework|
+				= homework.body
+		- if current_user.teacher? 
+			br
+			.form-horizontal.col-xs-10 role='form'
+				= simple_form_for :send_message, {url: messages_path, method: :post, remote: true} do |f|
+				  = f.input :deadline, label: false, placeholder: "Deadline"
+				  = f.input :body, label: false, placeholder: "Homework message"
+				  = f.input :recipients, as: :hidden, input_html: {value: @course_group}
+				  = f.button :submit, "Add homework", class: 'col-xs-12'
+
 - if current_user.teacher?
-	table
-	  tbody
-	    - @students.each do |student|
-	    	= render 'student_row', student: student
-- if current_user.student?
-	h3 Your marks
-	hr
-	- current_user.marks.where(course_id: @course_group.course).each do |mark|
-		.marks = mark.mark
+	.notes.col-xs-12.col-md-6
+		.content
+			.header 
+				| Messages
+				= link_to root_path, class: 'pull-right' do
+					i.fa.fa-plus
+.col-xs-12
+	- if current_user.teacher?
+		h3 Students
+		table
+		  tbody
+		    - @students.each do |student|
+		    	= render 'student_row', student: student
+	- if current_user.student?
+		h3 Your marks
+		hr
+		- current_user.marks.where(course_id: @course_group.course).each do |mark|
+			.marks = mark.mark

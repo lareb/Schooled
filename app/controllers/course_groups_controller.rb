@@ -4,6 +4,8 @@ class CourseGroupsController < ApplicationController
   def show
   	@students = @course_group.group.students
   	@school = School.find(params[:school_id])
+  	@homework = @course_group.mailbox.inbox
+  	
   end
 
   private

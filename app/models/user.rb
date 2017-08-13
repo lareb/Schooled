@@ -16,7 +16,17 @@ class User < ApplicationRecord
             presence: true,
             length: { minimum: 6 }
 
+  acts_as_messageable
+
   def admin?
     admin
+  end
+
+  def mailboxer_name
+    self.name
+  end
+
+  def mailboxer_email
+    email
   end
 end

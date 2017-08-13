@@ -17,7 +17,7 @@ users_seed = [
   {name: 'Ivancho',
   email: 'ivancho@example.com', password: 'password',
   password_confirmation: 'password', admin: false,
-  school_id: 1, role: 0, group_id: 1},
+  school_id: 1, role: 0, group_id: 1, number: 1},
   {name: 'Antony Stoyanov',
   email: 'tonkata@example.com', password: 'password',
   password_confirmation: 'password', admin: false,
