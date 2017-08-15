@@ -1,15 +1,21 @@
 class MessagesController < ApplicationController
 
   def create
-    debugger
-    @recipients = params[:send_message][:recipients]
+    @recipients = params[:send_message][:receiver_class] == 'CourseGroup' ? 
+       CourseGroup.where(id: Array(params[:send_message][:recipients])) :
+       User.where(id: Array(params[:send_message][:recipients]))
 
     @receipt = current_user.send_message(@recipients, params[:send_message][:body], params[:send_message][:subject])
-    if (@receipt.errors.blank?)
-      @conversation = @receipt.conversation
-      flash[:success]= t('mailboxer.sent')
-    else
-      render :action => :new
+    
+    respond_to do |format|
+      if (@receipt.errors.blank?)
+        @conversation = @receipt.conversation
+        format.html { redirect_to @course_group, notice: 'Successfully created.' }
+        format.js
+      else
+        format.html { render :new }
+        format.json { render json: @course.errors, status: :unprocessable_entity }
+      end
     end
   end
 

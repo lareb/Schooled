@@ -13,15 +13,18 @@ h1
 					i.fa.fa-plus
 		.body
 			- @homework.each do |homework|
-				= homework.body
+				= homework.try(:body)
 		- if current_user.teacher? 
 			br
 			.form-horizontal.col-xs-10 role='form'
 				= simple_form_for :send_message, {url: messages_path, method: :post, remote: true} do |f|
-				  = f.input :deadline, label: false, placeholder: "Deadline"
-				  = f.input :body, label: false, placeholder: "Homework message"
-				  = f.input :recipients, as: :hidden, input_html: {value: @course_group}
-				  = f.button :submit, "Add homework", class: 'col-xs-12'
+
+					= f.input :subject, as: :hidden, input_html: {value: "Homework"}
+					= f.input :deadline, label: false, placeholder: "Deadline"
+					= f.input :body, label: false, placeholder: "Homework message"
+					= f.input :recipients, as: :hidden, input_html: {value: @course_group.id}
+					= f.input :receiver_class, as: :hidden, input_html: {value: "CourseGroup"}
+					= f.button :submit, "Add homework", class: 'col-xs-12'
 
 - if current_user.teacher?
 	.notes.col-xs-12.col-md-6

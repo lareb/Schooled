@@ -6,4 +6,14 @@ class CourseGroup < ApplicationRecord
 
   has_many :course_group_teachers
   has_many :teachers, through: :course_group_teachers, source: :user
+
+  def mailboxer_name
+
+  end
+
+  def mailboxer_email(messageable)
+
+  end
+
+
 end
