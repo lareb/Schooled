@@ -1,8 +1,6 @@
 class CreateSubjects < ActiveRecord::Migration[5.1]
   def change
     create_table :subjects do |t|
-      t.references :course, foreign_key: true, index: true, null: false
-
       t.string :name,   null: false
       t.integer :grade, null: false
     end

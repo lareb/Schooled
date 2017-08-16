@@ -1,13 +1,12 @@
 class User < ApplicationRecord
   belongs_to :school, optional: true
   belongs_to :group,  optional: true
-
-  belongs_to :parent, class_name: 'User', foreign_key: 'parent_id',
+  belongs_to :parent, class_name: 'User',
+                      foreign_key: 'parent_id',
                       optional: true
-  has_many :children, class_name: 'User', foreign_key: 'parent_id'
 
   has_many :marks
-  has_many :course_students
+  has_many :children, class_name: 'User', foreign_key: 'parent_id'
 
   enum role: { student: 0, teacher: 1, moderator: 2, headmaster: 3 }
 
