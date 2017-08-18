@@ -1,8 +1,8 @@
 h1 Your courses
 
 - if current_user.teacher?
-  - @course_groups.each do |course_group|
-  	= link_to "#{course_group.course.subject.name} #{course_group.group.grade}#{course_group.group.name}", school_course_group_path(current_user.school, course_group), class: "course col-xs-12 col-md-4"
+  - @courses.each do |course|
+  	= link_to "#{course.subject.name} #{course.grade}#{course.group.name}", root_url, class: "course col-xs-12 col-md-4"
 
 	        
 - if current_user.student?

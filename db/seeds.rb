@@ -45,7 +45,8 @@ Course.find_or_create_by(
     school_id: 1,
     year: 2017,
     grade: 10,
-    group_id: 1
+    group_id: 1,
+    teacher_id: 5
   }
 )
 Group.find_or_create_by(

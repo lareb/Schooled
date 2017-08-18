@@ -2,6 +2,7 @@ class User < ApplicationRecord
   belongs_to :school,  optional: true
   belongs_to :group,   optional: true
 
+  has_many :courses
   has_many :marks
   has_many :parent_students
   has_many :children, through: :parent_students, class_name: "User"

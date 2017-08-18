@@ -4,9 +4,10 @@ class CoursesController < ApplicationController
   def index
     case current_user.role
     when 'teacher'
-      @course_groups = current_user.course_groups
+      @courses = current_user.courses
+      debugger
     when 'student'
-      @course_groups = current_user.group.course_groups
+      @courses = current_user.group.courses
     end
   end
 

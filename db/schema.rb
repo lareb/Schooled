@@ -18,10 +18,14 @@ ActiveRecord::Schema.define(version: 20170817132307) do
   create_table "courses", force: :cascade do |t|
     t.bigint "subject_id"
     t.bigint "school_id"
+    t.bigint "group_id"
+    t.bigint "teacher_id"
     t.integer "year", null: false
     t.integer "grade", null: false
+    t.index ["group_id"], name: "index_courses_on_group_id"
     t.index ["school_id"], name: "index_courses_on_school_id"
     t.index ["subject_id"], name: "index_courses_on_subject_id"
+    t.index ["teacher_id"], name: "index_courses_on_teacher_id"
   end
 
   create_table "groups", force: :cascade do |t|
@@ -44,8 +48,12 @@ ActiveRecord::Schema.define(version: 20170817132307) do
   end
 
   create_table "parent_students", force: :cascade do |t|
+    t.bigint "student_id"
+    t.bigint "parent_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["parent_id"], name: "index_parent_students_on_parent_id"
+    t.index ["student_id"], name: "index_parent_students_on_student_id"
   end
 
   create_table "schools", force: :cascade do |t|
