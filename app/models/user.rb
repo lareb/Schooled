@@ -7,7 +7,7 @@ class User < ApplicationRecord
   has_many :children, through: :parent_students, class_name: "User"
   has_many :parents,  through: :parent_students, class_name: "User"
 
-  enum role: { student: 0, teacher: 1, moderator: 2, parent: 3 }
+  enum role: { student: 0, teacher: 1, moderator: 2 }
 
   has_secure_password
   validates :email, uniqueness: true, presence: true
