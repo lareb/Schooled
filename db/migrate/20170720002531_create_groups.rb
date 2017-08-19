@@ -1,11 +1,9 @@
 class CreateGroups < ActiveRecord::Migration[5.1]
   def change
     create_table :groups do |t|
-      t.integer :grade
-      t.string :name
+      t.integer :grade,     null: false
+      t.string :name,       null: false
       t.references :school, foreign_key: true
-
-      t.timestamps
     end
   end
 end

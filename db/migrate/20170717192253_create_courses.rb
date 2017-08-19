@@ -3,7 +3,10 @@ class CreateCourses < ActiveRecord::Migration[5.1]
     create_table :courses do |t|
     	t.references :subject,        index: true
     	t.references :school,         index: true
-      t.integer :year
+    	t.references :group,          index: true
+    	t.references :user,           undex: true
+      t.integer :year,              null: false
+      t.integer :grade,             null: false
     end
   end
 end
