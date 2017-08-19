@@ -5,7 +5,6 @@ class CoursesController < ApplicationController
     case current_user.role
     when 'teacher'
       @courses = current_user.courses
-      debugger
     when 'student'
       @courses = current_user.group.courses
     end

@@ -4,9 +4,12 @@ class User < ApplicationRecord
 
   has_many :courses
   has_many :marks
-  has_many :parent_students
-  has_many :children, through: :parent_students, class_name: "User"
-  has_many :parents,  through: :parent_students, class_name: "User"
+
+  has_many :student_relations, foreign_key: "parent_id", class_name: "ParentStudent"
+  has_many :students, through: :student_relations, source: :student
+
+  has_many :parent_relations, foreign_key: "student_id", class_name: "ParentStudent"
+  has_many :parents, through: :parent_relations, source: :parent
 
   enum role: { student: 0, teacher: 1, moderator: 2 }
 

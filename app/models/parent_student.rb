@@ -1,4 +1,4 @@
 class ParentStudent < ApplicationRecord
-	belongs_to :student, class_name: "User", foreign_key: "student_id"
-	belongs_to :parent,  class_name: "User", foreign_key: "parent_id"
+  belongs_to :student, foreign_key: "student_id", class_name: "User"
+  belongs_to :parent,  foreign_key: "parent_id",  class_name: "User"
 end
