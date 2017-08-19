@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170817132307) do
+ActiveRecord::Schema.define(version: 20170819175119) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20170817132307) do
     t.index ["user_id"], name: "index_marks_on_user_id"
   end
 
-  create_table "parent_students", force: :cascade do |t|
+  create_table "parentships", force: :cascade do |t|
     t.integer "parent_id"
     t.integer "student_id"
     t.datetime "created_at", null: false

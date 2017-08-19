@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ParentStudentTest < ActiveSupport::TestCase
+class ParentshipTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
