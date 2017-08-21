@@ -1,0 +1,11 @@
+h1 
+	= "#{@course.subject.name} #{@course.group.grade}#{@course.group.name}"
+	.pull-right
+		= @course.teacher.name
+
+
+- if current_user.teacher?
+	table
+		tbody
+			- @students.each do |student|
+				= render 'student_row', student: student

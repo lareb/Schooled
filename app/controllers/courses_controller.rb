@@ -11,6 +11,7 @@ class CoursesController < ApplicationController
   end
 
   def show
+    @students = @course.group.students
   end
 
   def new

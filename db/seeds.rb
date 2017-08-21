@@ -38,7 +38,13 @@ Subject.find_or_create_by(
     grade: 10
   }
 )
-
+Group.find_or_create_by(
+  {
+    grade: 10,
+    name: 'a',
+    school_id: 1
+  }
+)
 Course.find_or_create_by(
   {
     subject_id: 1,
@@ -47,13 +53,6 @@ Course.find_or_create_by(
     grade: 10,
     group_id: 1,
     user_id: 5
-  }
-)
-Group.find_or_create_by(
-  {
-    grade: 10,
-    name: 'a',
-    school_id: 1
   }
 )
 

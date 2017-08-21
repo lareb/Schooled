@@ -1,9 +1,11 @@
 h1 Your courses
 
 - if current_user.teacher?
-  - @courses.each do |course|
-  	= link_to "#{course.subject.name} #{course.grade}#{course.group.name}", root_url, class: "course col-xs-12 col-md-4"
-
+	- (1..12).each do |klass|
+		- if @courses.where(grade: klass).any?
+			h4 = "Grade #{klass}"
+			- @courses.where(grade: klass).each do |course|
+				= link_to "#{course.subject.name} #{course.grade}#{course.group.name}", school_course_path(course.school, course), class: "course col-xs-12 col-md-4"
 	        
 - if current_user.student?
 	table

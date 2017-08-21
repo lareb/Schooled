@@ -1,6 +1,7 @@
 $(function() {
     $('.give-marks a.new').click(function(){
-    	$(this).parent().siblings('div.mark_mark').children('.mark').val($(this).html());
+    	mark  = $(this).html();
+    	$(this).parent().parent().siblings('.mark_mark')[0].firstChild.value=mark;
     	var form = $(this).parent().parent().parent();
     	form.submit();
     });
