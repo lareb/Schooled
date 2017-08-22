@@ -38363,3 +38363,267 @@ Migrating to CreateAbsences (20170822224354)
   [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(3908559930667590240)[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/schools/1/courses/1" for 127.0.0.1 at 2017-08-23 02:01:35 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CoursesController#show as HTML
+  Parameters: {"school_id"=>"1", "id"=>"1"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.slim within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 0]]
+  Rendered courses/_term_info.html.slim (21.3ms)
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 1]]
+  Rendered courses/_term_info.html.slim (1.1ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 2]]
+  Rendered courses/_term_info.html.slim (0.7ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 3]]
+  Rendered courses/_term_info.html.slim (0.8ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 4]]
+  Rendered courses/_term_info.html.slim (0.7ms)
+  Rendered courses/show.html.slim within layouts/application (56.6ms)
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_sidebar.html.slim (19.9ms)
+Completed 200 OK in 416ms (Views: 358.0ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/schools/1/courses/1" for 127.0.0.1 at 2017-08-23 02:01:51 +0300
+Processing by CoursesController#show as HTML
+  Parameters: {"school_id"=>"1", "id"=>"1"}
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.slim within layouts/application
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 0]]
+  Rendered courses/_term_info.html.slim (13.2ms)
+  [1m[36mMark Load (0.4ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 1]]
+  Rendered courses/_term_info.html.slim (2.0ms)
+  [1m[36mMark Load (0.4ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 2]]
+  Rendered courses/_term_info.html.slim (1.9ms)
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 3]]
+  Rendered courses/_term_info.html.slim (2.0ms)
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 4]]
+  Rendered courses/_term_info.html.slim (1.5ms)
+  Rendered courses/show.html.slim within layouts/application (31.5ms)
+  [1m[36mSchool Load (0.3ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_sidebar.html.slim (15.5ms)
+Completed 200 OK in 125ms (Views: 118.1ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/schools/1/courses/1" for 127.0.0.1 at 2017-08-23 02:02:51 +0300
+Processing by CoursesController#show as HTML
+  Parameters: {"school_id"=>"1", "id"=>"1"}
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.slim within layouts/application
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  Rendered courses/_term_info.html.slim (7.3ms)
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  Rendered courses/_term_info.html.slim (1.8ms)
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 2]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  Rendered courses/_term_info.html.slim (1.4ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 3]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  Rendered courses/_term_info.html.slim (1.6ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 4]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  Rendered courses/_term_info.html.slim (1.2ms)
+  Rendered courses/show.html.slim within layouts/application (21.4ms)
+  [1m[36mSchool Load (0.3ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_sidebar.html.slim (15.6ms)
+Completed 200 OK in 80ms (Views: 74.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/schools/1/courses/1" for 127.0.0.1 at 2017-08-23 02:02:57 +0300
+Processing by CoursesController#show as HTML
+  Parameters: {"school_id"=>"1", "id"=>"1"}
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.slim within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (7.8ms)
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (2.0ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 2]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (1.8ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 3]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (2.1ms)
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 4]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (2.3ms)
+  Rendered courses/show.html.slim within layouts/application (24.3ms)
+  [1m[36mSchool Load (0.3ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_sidebar.html.slim (7.3ms)
+Completed 200 OK in 77ms (Views: 72.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/schools/1/courses/1" for 127.0.0.1 at 2017-08-23 02:03:23 +0300
+Processing by CoursesController#show as HTML
+  Parameters: {"school_id"=>"1", "id"=>"1"}
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.slim within layouts/application
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (8.3ms)
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (2.1ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 2]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (3.0ms)
+  [1m[36mMark Load (0.4ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 3]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (3.2ms)
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 4]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (2.5ms)
+  Rendered courses/show.html.slim within layouts/application (29.2ms)
+  [1m[36mSchool Load (0.3ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_sidebar.html.slim (7.6ms)
+Completed 200 OK in 82ms (Views: 76.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/schools/1/courses/1" for 127.0.0.1 at 2017-08-23 02:03:40 +0300
+Processing by CoursesController#show as HTML
+  Parameters: {"school_id"=>"1", "id"=>"1"}
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.slim within layouts/application
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMark Load (0.4ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (7.2ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (1.9ms)
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 2]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (3.4ms)
+  [1m[36mMark Load (0.4ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 3]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (3.6ms)
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 4]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (2.5ms)
+  Rendered courses/show.html.slim within layouts/application (32.5ms)
+  [1m[36mSchool Load (0.4ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_sidebar.html.slim (6.9ms)
+Completed 200 OK in 1331ms (Views: 1325.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/schools/1/courses/1" for 127.0.0.1 at 2017-08-23 02:03:47 +0300
+Processing by CoursesController#show as HTML
+  Parameters: {"school_id"=>"1", "id"=>"1"}
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.1ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.slim within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (7.5ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (1.8ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 2]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (1.7ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 3]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (1.7ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 4]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"]]
+  Rendered courses/_term_info.html.slim (1.8ms)
+  Rendered courses/show.html.slim within layouts/application (22.0ms)
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_sidebar.html.slim (9.5ms)
+Completed 200 OK in 1166ms (Views: 1161.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/schools/1/courses/1" for 127.0.0.1 at 2017-08-23 02:04:45 +0300
+Processing by CoursesController#show as HTML
+  Parameters: {"school_id"=>"1", "id"=>"1"}
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering courses/show.html.slim within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3 AND "absences"."purpose" = $4[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"], ["purpose", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3 AND "absences"."purpose" = $4[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"], ["purpose", 0]]
+  Rendered courses/_term_info.html.slim (7.5ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3 AND "absences"."purpose" = $4[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"], ["purpose", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3 AND "absences"."purpose" = $4[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"], ["purpose", 1]]
+  Rendered courses/_term_info.html.slim (2.7ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 2]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3 AND "absences"."purpose" = $4[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"], ["purpose", 2]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3 AND "absences"."purpose" = $4[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"], ["purpose", 2]]
+  Rendered courses/_term_info.html.slim (2.3ms)
+  [1m[36mMark Load (0.2ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 3]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3 AND "absences"."purpose" = $4[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"], ["purpose", 3]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3 AND "absences"."purpose" = $4[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"], ["purpose", 3]]
+  Rendered courses/_term_info.html.slim (2.8ms)
+  [1m[36mMark Load (0.3ms)[0m  [1m[34mSELECT "marks".* FROM "marks" WHERE "marks"."user_id" = $1 AND "marks"."course_id" = $2 AND "marks"."purpose" = $3[0m  [["user_id", 3], ["course_id", 1], ["purpose", 4]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3 AND "absences"."purpose" = $4[0m  [["user_id", 3], ["course_id", 1], ["excused", "t"], ["purpose", 4]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("absences"."value") FROM "absences" WHERE "absences"."user_id" = $1 AND "absences"."course_id" = $2 AND "absences"."excused" = $3 AND "absences"."purpose" = $4[0m  [["user_id", 3], ["course_id", 1], ["excused", "f"], ["purpose", 4]]
+  Rendered courses/_term_info.html.slim (2.5ms)
+  Rendered courses/show.html.slim within layouts/application (25.7ms)
+  [1m[36mSchool Load (0.2ms)[0m  [1m[34mSELECT  "schools".* FROM "schools" WHERE "schools"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Group Load (0.0ms)[0m  [1m[34mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_sidebar.html.slim (7.9ms)
+Completed 200 OK in 78ms (Views: 70.3ms | ActiveRecord: 4.9ms)
+
+
