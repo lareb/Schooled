@@ -3,11 +3,13 @@ class MarksController < ApplicationController
   before_action :set_student
 
   def create
-    @mark = User.find(params[:user_id]).marks.new(mark_params)
-    @course_group = CourseGroup.find(params[:mark][:course_group_id])
+    @student = User.find(params[:user_id])
+    @mark    = @student.marks.new(mark_params)
+    @course  = Course.find(params[:mark][:course_id])
+
     respond_to do |format|
       if @mark.save
-        format.html { redirect_to @coure_group, notice: 'Mark was successfully created.' }
+        format.html { redirect_to @coure, notice: 'Mark was successfully created.' }
         format.json { render :show, status: :created, location: @mark }
         format.js
       else
@@ -35,6 +37,6 @@ class MarksController < ApplicationController
     end
 
     def mark_params
-      params.require(:mark).permit(:course_id, :user_id, :mark)
+      params.require(:mark).permit(:course_id, :mark, :purpose, :user_id)
     end
 end

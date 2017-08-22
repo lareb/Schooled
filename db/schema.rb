@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20170819175119) do
     t.bigint "course_id"
     t.bigint "user_id"
     t.integer "mark", null: false
+    t.integer "purpose", default: 0
     t.boolean "approved"
     t.string "description"
     t.datetime "created_at", null: false

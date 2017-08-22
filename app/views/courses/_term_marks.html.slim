@@ -1,0 +1,16 @@
+- if current_user.teacher?
+	table.grades
+		thead
+			tr
+				th #
+				th Name
+				th Grades
+				th Avg.
+				th Add grade
+		tbody
+			- @students.each do |student|
+				= render 'student_row', student: student, purpose: (purpose || "first_term")
+
+- if current_user.student?
+	- current_user.marks.where(course_id: @course.id, purpose: purpose).each do |mark|
+		.marks = mark.mark

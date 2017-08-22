@@ -1,5 +1,3 @@
-$("#<%=@mark.purpose%> tr.<%=@student.id%>").after("<%= escape_javascript(render 'courses/student_row', student: @student, purpose: @mark.purpose) %>").remove();
-
 $(function() {
 	var used=false;
     $('.give-marks a.new').click(function(){

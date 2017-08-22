@@ -18,16 +18,10 @@ $(function() {
 		$('.register-options').hide();
 		$('.form-teacher').fadeIn(1500);
 	});
-
-
 	$('.form-student select#user_school_id').change(function(){
 		$('.user_group').show();
 		school = $('#user_school_id :selected').text();
 		$("optgroup").hide();
 		$("optgroup[label='" + school + "']").show();
 	});
-
-
-
-
 });
