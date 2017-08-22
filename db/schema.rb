@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20170822224354) do
     t.bigint "user_id"
     t.integer "year", null: false
     t.integer "grade", null: false
+    t.integer "study_hours", null: false
     t.index ["group_id"], name: "index_courses_on_group_id"
     t.index ["school_id"], name: "index_courses_on_school_id"
     t.index ["subject_id"], name: "index_courses_on_subject_id"
@@ -41,10 +42,12 @@ ActiveRecord::Schema.define(version: 20170822224354) do
   end
 
   create_table "groups", force: :cascade do |t|
+    t.bigint "school_id"
+    t.bigint "user_id"
     t.integer "grade", null: false
     t.string "name", null: false
-    t.bigint "school_id"
     t.index ["school_id"], name: "index_groups_on_school_id"
+    t.index ["user_id"], name: "index_groups_on_user_id"
   end
 
   create_table "marks", force: :cascade do |t|
@@ -98,4 +101,5 @@ ActiveRecord::Schema.define(version: 20170822224354) do
   end
 
   add_foreign_key "groups", "schools"
+  add_foreign_key "groups", "users"
 end

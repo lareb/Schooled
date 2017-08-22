@@ -2,6 +2,8 @@ class User < ApplicationRecord
   belongs_to :school,  optional: true
   belongs_to :group,   optional: true
 
+  has_one :hr_group, class_name: "Group"
+
   has_many :courses
   has_many :marks
   has_many :absences
