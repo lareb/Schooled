@@ -17,3 +17,11 @@ tr.course{
 table.grades{
 	width: 100%;
 }
+.nav.nav-tabs{
+	border-bottom: 0px;
+	.active a, .active a:hover, .active a:focus{
+		font-size: 15px;
+		border-top: 5px solid #2e7aa2;
+		border-radius: 5px;
+	}
+}

@@ -11,10 +11,10 @@ tr[class='#{student.id}']
     - if student_marks.size > 0
       b Avg. 
       = '%.2f' % student_marks.average(:mark)
-  td.col-xs-4
+  td.col-xs-4 style="padding-left: 0px; padding-right: 0px;"
   	- @mark = student.marks.new
     = simple_form_for [student, @mark], remote: true do |f|
-      ul.give-marks
+      ul.give-marks style="padding-left: 0px; padding-right: 0px; width: 246px; margin: 0 auto;"
         li
           a
             i.fa.fa-undo

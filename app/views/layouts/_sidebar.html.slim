@@ -2,7 +2,7 @@
 	.logo SCHOOLED
 	.content
 		.personal
-			.image.col-xs-3
+			.image.col-xs-3.visible-lg
 				i.fa.fa-user-circle-o
 			.info.col-xs-9
 				.name.col-xs-12 = link_to current_user.try(:name) || current_user.email, user_path(current_user)
