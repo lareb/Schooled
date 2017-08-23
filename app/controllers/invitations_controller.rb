@@ -10,26 +10,21 @@ class InvitationsController < ApplicationController
 
   def destroy
     @invitation = Invitation.find(params[:id])
-    if params[:accept]
-      assign_invitation(student, invitation)
-    end
+
+    InvitationAccepter.new(@invitation).save! if accept?
 
     @invitation.destroy!
   end
 
   private
 
-  def assign_invitation(student, invitation)
-    student = invitation.student
-    student.group_id = invitation.group_id
-    student.address = invitation.address
-    student.phone_number = invitation.phone_number
-    student.identification = invitation.identification
-  end
-
   def invitation_params
     params.require(:invitation)
           .permit(:group_id, :identification, :phone_number, :address)
           .merge(user_id: current_user.id)
+  end
+
+  def accept?
+    params.require(:accept)
   end
 end
