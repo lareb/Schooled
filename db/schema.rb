@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170822224354) do
+ActiveRecord::Schema.define(version: 20170823163740) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -73,6 +73,14 @@ ActiveRecord::Schema.define(version: 20170822224354) do
     t.index ["user_id"], name: "index_marks_on_user_id"
   end
 
+  create_table "messages", force: :cascade do |t|
+    t.string "text"
+    t.string "entity_type"
+    t.integer "entity_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "parentships", force: :cascade do |t|
     t.integer "parent_id"
     t.integer "student_id"
@@ -104,6 +112,7 @@ ActiveRecord::Schema.define(version: 20170822224354) do
     t.string "email", null: false
     t.string "address"
     t.string "password_digest"
+    t.string "identification"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["group_id"], name: "index_users_on_group_id"
