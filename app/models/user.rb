@@ -14,6 +14,8 @@ class User < ApplicationRecord
   has_many :parent_relations, foreign_key: "student_id", class_name: "Parentship"
   has_many :parents, through: :parent_relations, source: :parent
 
+  has_many :messages, as: :entity
+
   enum role: { student: 0, teacher: 1, moderator: 2 }
 
   has_secure_password
