@@ -50,6 +50,16 @@ ActiveRecord::Schema.define(version: 20170822224354) do
     t.index ["user_id"], name: "index_groups_on_user_id"
   end
 
+  create_table "invitations", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "group_id"
+    t.string "identification"
+    t.string "address"
+    t.string "phone_number"
+    t.index ["group_id"], name: "index_invitations_on_group_id"
+    t.index ["user_id"], name: "index_invitations_on_user_id"
+  end
+
   create_table "marks", force: :cascade do |t|
     t.bigint "course_id"
     t.bigint "user_id"
