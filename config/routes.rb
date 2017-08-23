@@ -18,4 +18,6 @@ Rails.application.routes.draw do
       resources :enroll, only: [:create], shallow: true
     end
   end
+
+  resources :invitations, only: [:new, :create, :destroy]
 end
