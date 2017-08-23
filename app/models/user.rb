@@ -2,8 +2,11 @@ class User < ApplicationRecord
   belongs_to :school,  optional: true
   belongs_to :group,   optional: true
 
+  has_one :hr_group, class_name: "Group"
+
   has_many :courses
   has_many :marks
+  has_many :absences
 
   has_many :student_relations, foreign_key: "parent_id", class_name: "Parentship"
   has_many :students, through: :student_relations, source: :student

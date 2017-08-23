@@ -42,7 +42,8 @@ Group.find_or_create_by(
   {
     grade: 10,
     name: 'a',
-    school_id: 1
+    school_id: 1,
+    user_id: 5
   }
 )
 Course.find_or_create_by(
@@ -52,7 +53,8 @@ Course.find_or_create_by(
     year: 2017,
     grade: 10,
     group_id: 1,
-    user_id: 5
+    user_id: 5,
+    study_hours: 120
   }
 )
 
