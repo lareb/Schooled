@@ -16,7 +16,7 @@ tr[class='#{student.id}']
     = simple_form_for [student, @mark], remote: true do |f|
       ul.give-marks style="padding-left: 0px; padding-right: 0px; width: 246px; margin: 0 auto;"
         li
-          a
+          = link_to user_mark_path [student.id, student_marks.order(created_at: :desc).last(1)], remote: true, method: :delete, class: "delete" do
             i.fa.fa-undo
         li 
           a.new 2

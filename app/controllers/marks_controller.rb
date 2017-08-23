@@ -1,5 +1,4 @@
 class MarksController < ApplicationController
-  before_action :set_mark, only: [:destroy]
   before_action :set_student
 
   def create
@@ -20,7 +19,7 @@ class MarksController < ApplicationController
   end
 
   def destroy
-    @mark.destroy
+    Mark.where(user_id: @set_student.id, course_id: course_id).order(created_at: :desc).last(1).destroy!
     respond_to do |format|
       format.html { redirect_to marks_url, notice: 'Mark was successfully destroyed.' }
       format.json { head :no_content }
@@ -28,10 +27,9 @@ class MarksController < ApplicationController
   end
 
   private
-    def set_mark
-      @mark = Mark.find(params[:id])
-    end
-
+  def course_id
+    params.require(:course_id)
+  end
     def set_student
       @student = User.find(params[:user_id])
     end

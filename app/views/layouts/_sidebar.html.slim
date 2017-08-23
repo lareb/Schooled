@@ -22,13 +22,13 @@
 				= link_to school_group_path(current_user.school, current_user.group), class: 'col-xs-6' do
 					i.fa.fa-users.col-xs-12
 					span.col-xs-12 My class
-			= link_to school_courses_path(current_user.school), class: 'col-xs-6' do
-				i.fa.fa-tasks.col-xs-12
-				span.col-xs-12 My courses
 			- if current_user.teacher? && current_user.hr_group
 				= link_to school_group_path(current_user.school, current_user.hr_group), class: 'col-xs-6' do
 					i.fa.fa-users.col-xs-12
 					span.col-xs-12 My class
+			= link_to school_courses_path(current_user.school), class: 'col-xs-6' do
+				i.fa.fa-tasks.col-xs-12
+				span.col-xs-12 My courses
 
 	.sidebar-footer.col-xs-12
 	  b 
