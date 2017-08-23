@@ -6,18 +6,19 @@ tr[class='#{student.id}']
   td.col-xs-3 = link_to student.name, user_path(student)
   td.col-xs-3 
     - student_marks.each do |mark|
-    	.received-marks.col-xs-1 = mark.mark	
+      .received-marks.col-xs-1 = mark.mark  
   td.col-xs-1
     - if student_marks.size > 0
       b Avg. 
       = '%.2f' % student_marks.average(:mark)
   td.col-xs-4 style="padding-left: 0px; padding-right: 0px;"
-  	- @mark = student.marks.new
+    - @mark = student.marks.new
     = simple_form_for [student, @mark], remote: true do |f|
       ul.give-marks style="padding-left: 0px; padding-right: 0px; width: 246px; margin: 0 auto;"
         li
-          = link_to user_mark_path [student.id, student_marks.order(created_at: :desc).last(1)], remote: true, method: :delete, class: "delete" do
-            i.fa.fa-undo
+          - if student_marks.any?
+            = link_to user_mark_path(user_id: student, id: student_marks.order(created_at: :desc).first), method: :delete, remote: true, class: "delete" do
+              i.fa.fa-undo
         li 
           a.new 2
         li 
