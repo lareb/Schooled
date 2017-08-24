@@ -1,11 +1,14 @@
 class InvitationsController < ApplicationController
+  
+  def show
+  end
+
   def new
-    @invite = Invitation.new
-    render :new
+    @invitation = Invitation.new
   end
 
   def create
-    Invitation.create!(invitation_params)
+    current_user.invitations.create!(invitation_params)
   end
 
   def destroy

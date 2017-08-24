@@ -1,7 +1,7 @@
 class CreateMessages < ActiveRecord::Migration[5.1]
   def change
     create_table :messages do |t|
-      t.stirng :title, limit: 255
+      t.string :title, limit: 255
       t.string :text
 
       t.string :entity_type

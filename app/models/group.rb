@@ -4,6 +4,6 @@ class Group < ApplicationRecord
 
   has_many :courses
   has_many :students, class_name: "User"
-
   has_many :messages, as: :entity
+  has_many :invitations
 end

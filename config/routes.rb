@@ -23,5 +23,5 @@ Rails.application.routes.draw do
 
   resources :parentships, only: [:new, :create]
 
-  resources :invitations, only: [:new, :create, :destroy]
+  resources :invitations, except: [:index, :edit, :update]
 end

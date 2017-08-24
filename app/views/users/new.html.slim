@@ -1,6 +1,6 @@
 h1.initial Register as a
 
-.form-student
+.form-student.hidden
   center = image_tag("student.png")
   = simple_form_for @user do |f|
     = f.error_notification
@@ -8,22 +8,27 @@ h1.initial Register as a
     .form-inputs
       = f.input :email
       = f.input :name
+      = f.input :phone_number
+      = f.input :address, hint: "For verification purposes."
       = f.input :password
       = f.input :password_confirmation
       = f.association :school, collection: School.order(:name)
-      = f.input :group, collection: School.order(:name),
+      = f.input :group_id, collection: School.order(:name),
                            as: :grouped_select,
                            group_method: :groups,
                            group_label_method: :name,
                            label_method: lambda { |group| "#{group.grade}#{group.name}" },
                            include_blank: "Please Choose",
-                           hint: "For #{Time.now.year}/#{Time.now.year+1}"
-      = f.input :address, hint: "For verification purposes."
+                           hint: "For #{Time.now.year}/#{Time.now.year+1}",
+                           wrapper_html: {class: "hidden"}
+      = f.input :role, as: :hidden, input_html: {value: 'student'}
+      = f.input :identification
+      = f.input :number
 
     .form-actions
       = f.button :submit, 'Register'
 
-.form-parent
+.form-parent.hidden
   center = image_tag("parent.png")
   = simple_form_for @user do |f|
     = f.error_notification
@@ -37,7 +42,7 @@ h1.initial Register as a
     .form-actions
       = f.button :submit
 
-.form-teacher
+.form-teacher.hidden
   center = image_tag("teacher.png")
   = simple_form_for @user do |f|
     = f.error_notification
@@ -45,9 +50,13 @@ h1.initial Register as a
     .form-inputs
       = f.input :email
       = f.input :name
+      = f.input :phone_number
+      = f.input :identification
+      = f.input :address
       = f.input :password
       = f.input :password_confirmation
       = f.association :school, collection: School.order(:name)
+      = f.input :role, as: :hidden, input_html: {value: 'teacher'}
 
     .form-actions
       = f.button :submit
