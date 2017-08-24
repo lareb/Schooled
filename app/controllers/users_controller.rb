@@ -15,10 +15,21 @@ class UsersController < ApplicationController
   end
 
   def create
+    debugger
     @user = User.new(create_params)
+
     if @user.save
       session[:user_id] = @user.id
-      redirect_to root_url, notice: 'Thank you for signing up!'
+      case create_params[:role]
+      when "student"
+        @user.update_attribute('group_id', nil)
+        @user.invitations.create(create_params.slice(:group_id, :identification, :address, :phone_number))
+        redirect_to root_url, notice: 'Thank you for signing up! Your application to #{@user.school.name} is now awaiting confirmation from your teacher!'
+      when "teacher"
+
+      else
+
+      end
     else
       render :new
     end
@@ -47,7 +58,7 @@ class UsersController < ApplicationController
   private
 
   def create_params
-    params.require(:user).permit(:email, :name, :password, :password_confirmation, :school_id, :group_id)
+    params.require(:user).permit(:email, :name, :password, :password_confirmation, :school_id, :group_id, :identification, :address, :role, :number, :phone_number)
   end
 
   def update_params

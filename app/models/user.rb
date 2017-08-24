@@ -7,6 +7,7 @@ class User < ApplicationRecord
   has_many :courses
   has_many :marks
   has_many :absences
+  has_many :invitations
 
   has_many :student_relations, foreign_key: "parent_id", class_name: "Parentship"
   has_many :students, through: :student_relations, source: :student

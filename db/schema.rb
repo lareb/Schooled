@@ -113,6 +113,7 @@ ActiveRecord::Schema.define(version: 20170823163740) do
     t.string "address"
     t.string "password_digest"
     t.string "identification"
+    t.string "phone_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["group_id"], name: "index_users_on_group_id"

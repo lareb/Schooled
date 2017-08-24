@@ -1,7 +1,6 @@
 class InvitationsController < ApplicationController
   def new
     @invite = Invitation.new
-    render :new
   end
 
   def create
