@@ -1,10 +1,6 @@
 class InvitationsController < ApplicationController
-  def new
-    @invite = Invitation.new
-  end
+  def show
 
-  def create
-    Invitation.create!(invitation_params)
   end
 
   def destroy
@@ -16,13 +12,6 @@ class InvitationsController < ApplicationController
   end
 
   private
-
-  def invitation_params
-    params.require(:invitation)
-          .permit(:group_id, :identification, :phone_number, :address)
-          .merge(user_id: current_user.id)
-  end
-
   def accept?
     params.require(:accept)
   end

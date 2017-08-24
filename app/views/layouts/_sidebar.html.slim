@@ -27,10 +27,10 @@
           i.fa.fa-users.col-xs-12
           span.col-xs-12 My class
       - else
-        = link_to new_invitation_path, class: 'col-xs-6' do
+        = link_to invitation_path(current_user.invitations.last), class: 'col-xs-6' do
           i.fa.fa-users.col-xs-12
-          span.col-xs-12 Enroll a class   
-      - if current_user.school_id
+          span.col-xs-12 Enroll your class   
+      - if current_user.school_id && current_user.accepted
         = link_to school_courses_path(current_user.school), class: 'col-xs-6' do
           i.fa.fa-tasks.col-xs-12
           span.col-xs-12 My courses
