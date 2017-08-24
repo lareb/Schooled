@@ -30,11 +30,11 @@
                     b = current_user.created_at.to_time.strftime('%B %e at %l:%M %p')
 
           td.col-xs-6
-            = link_to invitation_path(accept: true), method: :delete, remote: true, class: "delete col-xs-3 text-center" do
+            = link_to invitation_path(accept: true, id: invitation), method: :delete, remote: true, class: "delete col-xs-3 text-center" do
               i.fa.fa-check.fa-3x
               br
               b Accept
-            = link_to invitation_path(accept: false), method: :delete, remote: true, class: "delete col-xs-3 text-center" do
+            = link_to invitation_path(accept: false, id: invitation), method: :delete, remote: true, class: "delete col-xs-3 text-center" do
               i.fa.fa-times.fa-3x
               br
               b Decline

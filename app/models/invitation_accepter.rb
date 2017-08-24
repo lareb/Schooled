@@ -9,6 +9,7 @@ class InvitationAccepter
 
   def save!
     student = invitation.student
+    student.accepted = true
     student.group_id = invitation.group_id
     student.address = invitation.address
     student.number = invitation.phone_number
