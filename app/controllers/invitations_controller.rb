@@ -12,7 +12,6 @@ class InvitationsController < ApplicationController
   end
 
   def destroy
-    debugger
     @invitation = Invitation.find(params[:id])
 
     InvitationAccepter.new(@invitation).save! if accept?
