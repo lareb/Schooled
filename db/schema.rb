@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 20170823163740) do
     t.integer "year", null: false
     t.integer "grade", null: false
     t.integer "study_hours", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["group_id"], name: "index_courses_on_group_id"
     t.index ["school_id"], name: "index_courses_on_school_id"
     t.index ["subject_id"], name: "index_courses_on_subject_id"
@@ -46,6 +48,8 @@ ActiveRecord::Schema.define(version: 20170823163740) do
     t.bigint "user_id"
     t.integer "grade", null: false
     t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["school_id"], name: "index_groups_on_school_id"
     t.index ["user_id"], name: "index_groups_on_user_id"
   end
@@ -56,6 +60,8 @@ ActiveRecord::Schema.define(version: 20170823163740) do
     t.string "identification"
     t.string "address"
     t.string "phone_number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["group_id"], name: "index_invitations_on_group_id"
     t.index ["user_id"], name: "index_invitations_on_user_id"
   end
@@ -74,6 +80,7 @@ ActiveRecord::Schema.define(version: 20170823163740) do
   end
 
   create_table "messages", force: :cascade do |t|
+    t.string "title", limit: 255
     t.string "text"
     t.string "entity_type"
     t.integer "entity_id"
@@ -99,6 +106,8 @@ ActiveRecord::Schema.define(version: 20170823163740) do
   create_table "subjects", force: :cascade do |t|
     t.string "name", null: false
     t.integer "grade", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
