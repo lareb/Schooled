@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170823163740) do
+ActiveRecord::Schema.define(version: 20170827191236) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -66,6 +66,16 @@ ActiveRecord::Schema.define(version: 20170823163740) do
     t.index ["user_id"], name: "index_invitations_on_user_id"
   end
 
+  create_table "lessons", force: :cascade do |t|
+    t.bigint "schedule_id"
+    t.bigint "course_id"
+    t.integer "day"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_lessons_on_course_id"
+    t.index ["schedule_id"], name: "index_lessons_on_schedule_id"
+  end
+
   create_table "marks", force: :cascade do |t|
     t.bigint "course_id"
     t.bigint "user_id"
@@ -95,6 +105,15 @@ ActiveRecord::Schema.define(version: 20170823163740) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "schedules", force: :cascade do |t|
+    t.bigint "timetable_id"
+    t.bigint "group_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["group_id"], name: "index_schedules_on_group_id"
+    t.index ["timetable_id"], name: "index_schedules_on_timetable_id"
+  end
+
   create_table "schools", force: :cascade do |t|
     t.string "name", null: false
     t.string "address", null: false
@@ -103,11 +122,27 @@ ActiveRecord::Schema.define(version: 20170823163740) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "slots", force: :cascade do |t|
+    t.bigint "timetable_id"
+    t.integer "start_time"
+    t.integer "end_time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["timetable_id"], name: "index_slots_on_timetable_id"
+  end
+
   create_table "subjects", force: :cascade do |t|
     t.string "name", null: false
     t.integer "grade", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "timetables", force: :cascade do |t|
+    t.bigint "school_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["school_id"], name: "index_timetables_on_school_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -131,4 +166,10 @@ ActiveRecord::Schema.define(version: 20170823163740) do
 
   add_foreign_key "groups", "schools"
   add_foreign_key "groups", "users"
+  add_foreign_key "lessons", "courses"
+  add_foreign_key "lessons", "schedules"
+  add_foreign_key "schedules", "groups"
+  add_foreign_key "schedules", "timetables"
+  add_foreign_key "slots", "timetables"
+  add_foreign_key "timetables", "schools"
 end

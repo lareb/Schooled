@@ -6,4 +6,6 @@ class Group < ApplicationRecord
   has_many :students, class_name: "User"
   has_many :messages, as: :entity
   has_many :invitations
+
+  has_one :schedule
 end
