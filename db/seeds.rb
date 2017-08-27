@@ -57,5 +57,37 @@ Course.find_or_create_by(
     study_hours: 120
   }
 )
+Timetable.find_or_create_by(
+  {
+    school_id: 1
+  }
+)
+Slot.find_or_create_by(
+  {
+    timetable_id: 1,
+    start_time: 26700,
+    end_time: 29400
+  }
+)
+Schedule.find_or_create_by(
+  {
+    timetable_id: 1,
+    group_id: 1
+  }
+)
+Lesson.find_or_create_by(
+  {
+    schedule_id: 1,
+    course_id: 1,
+    day: 0
+  }
+)
+Lesson.find_or_create_by(
+  {
+    schedule_id: 1,
+    course_id: 1,
+    day: 3
+  }
+)
 
 puts 'Done ...'
