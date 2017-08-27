@@ -19,10 +19,14 @@ class MarksController < ApplicationController
   end
 
   def destroy
-    Mark.find(mark_id).destroy
+    @mark = Mark.find(mark_id)
+    @course = @mark.course
+    @purpose = @mark.purpose
+    @mark.destroy
     respond_to do |format|
       format.html { redirect_to marks_url, notice: 'Mark was successfully destroyed.' }
       format.json { head :no_content }
+      format.js
     end
   end
 
