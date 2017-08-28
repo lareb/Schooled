@@ -8,6 +8,27 @@ h1 Your courses
 				= link_to "#{course.subject.name} #{course.grade}#{course.group.name}", school_course_path(course.school, course), class: "course col-xs-12 col-md-4"
 	        
 - if current_user.student?
+	
+	table.col-xs-12.lessons.text-center
+	  thead
+	    tr
+	      th.text-center
+	        i.fa.fa-clock-o.fa-2x
+	      th.text-center Monday
+	      th.text-center Tuesday
+	      th.text-center Wednesday
+	      th.text-center Thursday
+	      th.text-center Friday
+	  tbody
+			- current_user.school.timetable.slots.order(:start_time).each do |slot|
+				- if current_user.group.lessons.where(slot_id: slot.id).any?
+				  tr
+				    td = "#{Time.at(slot.start_time).utc.strftime("%H:%M")}-#{Time.at(slot.end_time).utc.strftime("%H:%M")}"
+				    - (0..4).each do |day|
+				      td = current_user.group.lessons.where(slot_id: slot.id, day: day).first.try(:course).try(:name)
+
+
+
 	- 12.downto(1) do |klass|
 		- if @courses.where(grade: klass).any?
 			h4 = "Grade #{klass}"
