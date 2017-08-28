@@ -18,6 +18,7 @@ Rails.application.routes.draw do
     resources :courses
     resources :groups do
       resources :enroll, only: [:create], shallow: true
+      resources :lessons, only: [:new, :create, :destroy]
     end
   end
 

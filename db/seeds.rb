@@ -38,6 +38,18 @@ Subject.find_or_create_by(
     grade: 10
   }
 )
+Subject.find_or_create_by(
+  {
+    name: 'Informatics',
+    grade: 10
+  }
+)
+Subject.find_or_create_by(
+  {
+    name: 'Biology',
+    grade: 10
+  }
+)
 Group.find_or_create_by(
   {
     grade: 10,
@@ -55,6 +67,28 @@ Course.find_or_create_by(
     group_id: 1,
     user_id: 5,
     study_hours: 120
+  }
+)
+Course.find_or_create_by(
+  {
+    subject_id: 2,
+    school_id: 1,
+    year: 2017,
+    grade: 10,
+    group_id: 1,
+    user_id: 5,
+    study_hours: 50
+  }
+)
+Course.find_or_create_by(
+  {
+    subject_id: 3,
+    school_id: 1,
+    year: 2017,
+    grade: 10,
+    group_id: 1,
+    user_id: 5,
+    study_hours: 100
   }
 )
 Timetable.find_or_create_by(
@@ -158,26 +192,6 @@ Slot.find_or_create_by(
     timetable_id: 1,
     start_time: 67200,
     end_time: 69900
-  }
-)
-Schedule.find_or_create_by(
-  {
-    timetable_id: 1,
-    group_id: 1
-  }
-)
-Lesson.find_or_create_by(
-  {
-    schedule_id: 1,
-    course_id: 1,
-    day: 0
-  }
-)
-Lesson.find_or_create_by(
-  {
-    schedule_id: 1,
-    course_id: 1,
-    day: 3
   }
 )
 

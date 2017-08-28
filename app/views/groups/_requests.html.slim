@@ -1,0 +1,40 @@
+- if @group.invitations.any? && current_user.teacher?
+
+  h1 Student Applications
+  table.table-responsive.col-xs-12
+    tbody
+      - @group.invitations.each do |invitation|
+        tr[class='#{invitation.id}']
+          td.col-xs-6 
+            table.col-xs-12
+              tbody.col-xs-12
+                tr
+                  td.col-xs-6
+                    | Name: 
+                  td
+                    b = invitation.student.name
+                tr
+                  td.col-xs-6
+                    | Identification: 
+                  td
+                    b = invitation.identification
+                tr
+                  td.col-xs-6
+                    | Phone number: 
+                  td
+                    b = invitation.phone_number
+                tr
+                  td.col-xs-6
+                    | Sent: 
+                  td 
+                    b = current_user.created_at.to_time.strftime('%B %e at %l:%M %p')
+
+          td.col-xs-6
+            = link_to invitation_path(accept: true, id: invitation), method: :delete, remote: true, class: "delete col-xs-3 text-center" do
+              i.fa.fa-check.fa-3x
+              br
+              b Accept
+            = link_to invitation_path(accept: false, id: invitation), method: :delete, remote: true, class: "delete col-xs-3 text-center" do
+              i.fa.fa-times.fa-3x
+              br
+              b Decline

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170827191236) do
+ActiveRecord::Schema.define(version: 20170827183042) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -67,13 +67,15 @@ ActiveRecord::Schema.define(version: 20170827191236) do
   end
 
   create_table "lessons", force: :cascade do |t|
-    t.bigint "schedule_id"
     t.bigint "course_id"
+    t.bigint "group_id"
+    t.bigint "slot_id"
     t.integer "day"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["course_id"], name: "index_lessons_on_course_id"
-    t.index ["schedule_id"], name: "index_lessons_on_schedule_id"
+    t.index ["group_id"], name: "index_lessons_on_group_id"
+    t.index ["slot_id"], name: "index_lessons_on_slot_id"
   end
 
   create_table "marks", force: :cascade do |t|
@@ -103,15 +105,6 @@ ActiveRecord::Schema.define(version: 20170827191236) do
     t.integer "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "schedules", force: :cascade do |t|
-    t.bigint "timetable_id"
-    t.bigint "group_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["group_id"], name: "index_schedules_on_group_id"
-    t.index ["timetable_id"], name: "index_schedules_on_timetable_id"
   end
 
   create_table "schools", force: :cascade do |t|
@@ -167,9 +160,8 @@ ActiveRecord::Schema.define(version: 20170827191236) do
   add_foreign_key "groups", "schools"
   add_foreign_key "groups", "users"
   add_foreign_key "lessons", "courses"
-  add_foreign_key "lessons", "schedules"
-  add_foreign_key "schedules", "groups"
-  add_foreign_key "schedules", "timetables"
+  add_foreign_key "lessons", "groups"
+  add_foreign_key "lessons", "slots"
   add_foreign_key "slots", "timetables"
   add_foreign_key "timetables", "schools"
 end

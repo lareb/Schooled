@@ -3,4 +3,5 @@ class School < ApplicationRecord
   has_many :courses
   has_many :groups
   has_many :messages, as: :entity
+  has_one :timetable
 end

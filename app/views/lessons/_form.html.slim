@@ -1,0 +1,14 @@
+- current_user.school.timetable.slots.order(:start_time).each do |slot|
+  tr
+    td = "#{Time.at(slot.start_time).utc.strftime("%H:%M")}-#{Time.at(slot.end_time).utc.strftime("%H:%M")}"
+    - (0..4).each do |day|
+      td
+        - lesson = Lesson.where(group_id: current_user.hr_group.id, slot_id: slot.id, day: day).first || Lesson.new
+        = simple_form_for ([current_user.school, current_user.hr_group, lesson]), remote: true, authenticity_token: true, html: {class: "col-xs-10 col-xs-offset-1"} do |f|
+          = f.association :course, label: false
+          = f.input :day, as: :hidden, input_html: {value: day}
+          = f.input :slot_id, as: :hidden, input_html: {value: slot.id}
+          = f.input :group_id, as: :hidden, input_html: {value: current_user.hr_group.id}
+          = f.button :submit, style: "display: none;"
+
+
