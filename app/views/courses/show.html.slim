@@ -1,7 +1,8 @@
 h1 
 	= "#{@course.subject.name} #{@course.group.grade}#{@course.group.name}"
 	.pull-right
-		= @course.teacher.name
+		= @course.teacher.name if current_user.student?
+		= link_to "Edit course", edit_school_course_path(current_user.school, @course) if current_user.teacher?
 
 
 ul.nav.nav-tabs
