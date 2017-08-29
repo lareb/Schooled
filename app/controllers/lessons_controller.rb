@@ -1,6 +1,15 @@
 class LessonsController < ApplicationController
   before_action :set_lesson, only: [:show, :edit, :update, :destroy]
 
+  def index
+    case current_user.role
+    when 'teacher'
+      @lessons = current_user.lessons
+    when 'student'
+      @lessons = current_user.group.lessons
+    end
+  end
+
   def new
     @lessons = current_user.hr_group.lessons
   end

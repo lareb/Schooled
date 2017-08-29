@@ -8,6 +8,7 @@ class CreateCourses < ActiveRecord::Migration[5.1]
       t.integer :year,              null: false
       t.integer :grade,             null: false
       t.integer :study_hours,       null: false
+      t.string  :room
 
       t.timestamps
     end

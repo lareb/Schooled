@@ -18,7 +18,7 @@
       = link_to root_path, class: 'col-xs-6' do
         i.fa.fa-bell-o.col-xs-12 
         span.col-xs-12 Alerts
-      - if current_user.student? && current_user.group
+      - if current_user.student?
         = link_to school_group_path(current_user.school, current_user.group), class: 'col-xs-6' do
           i.fa.fa-users.col-xs-12
           span.col-xs-12 My class
@@ -34,10 +34,13 @@
         = link_to new_invitation_path, class: 'col-xs-6' do
           i.fa.fa-users.col-xs-12
           span.col-xs-12 Enroll a class 
-      - if current_user.school_id && current_user.accepted
+      - if current_user.teacher? || current_user.student?
         = link_to school_courses_path(current_user.school), class: 'col-xs-6' do
           i.fa.fa-tasks.col-xs-12
           span.col-xs-12 My courses
+        = link_to school_lessons_path(current_user.school), class: 'col-xs-6' do
+          i.fa.fa-calendar.col-xs-12
+          span.col-xs-12 Week schedule
 
 
 

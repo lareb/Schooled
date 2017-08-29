@@ -18,6 +18,26 @@ users_seed = [
   email: 'ivancho@example.com', password: 'password',
   password_confirmation: 'password', admin: false,
   school_id: 1, role: 0, group_id: 1, number: 1, address: "Sofia"},
+  {name: 'Alexander',
+  email: 'alex@example.com', password: 'password',
+  password_confirmation: 'password', admin: false,
+  school_id: 1, role: 0, group_id: 1, number: 2, address: "Sofia"},
+  {name: 'Angel',
+  email: 'acho@example.com', password: 'password',
+  password_confirmation: 'password', admin: false,
+  school_id: 1, role: 0, group_id: 1, number: 3, address: "Sofia"},
+  {name: 'Dimitar',
+  email: 'mitko@example.com', password: 'password',
+  password_confirmation: 'password', admin: false,
+  school_id: 1, role: 0, group_id: 1, number: 4, address: "Sofia"},
+  {name: 'Iva',
+  email: 'iva@example.com', password: 'password',
+  password_confirmation: 'password', admin: false,
+  school_id: 1, role: 0, group_id: 1, number: 5, address: "Sofia"},
+  {name: 'Marta',
+  email: 'marta@example.com', password: 'password',
+  password_confirmation: 'password', admin: false,
+  school_id: 1, role: 0, group_id: 1, number: 6, address: "Sofia"},
   {name: 'Antony Stoyanov',
   email: 'tonkata@example.com', password: 'password',
   password_confirmation: 'password', admin: false,
@@ -55,7 +75,7 @@ Group.find_or_create_by(
     grade: 10,
     name: 'a',
     school_id: 1,
-    user_id: 5
+    user_id: 10
   }
 )
 Course.find_or_create_by(
@@ -65,7 +85,7 @@ Course.find_or_create_by(
     year: 2017,
     grade: 10,
     group_id: 1,
-    user_id: 5,
+    user_id: 10,
     study_hours: 120
   }
 )
@@ -76,7 +96,7 @@ Course.find_or_create_by(
     year: 2017,
     grade: 10,
     group_id: 1,
-    user_id: 5,
+    user_id: 10,
     study_hours: 50
   }
 )
@@ -87,7 +107,7 @@ Course.find_or_create_by(
     year: 2017,
     grade: 10,
     group_id: 1,
-    user_id: 5,
+    user_id: 10,
     study_hours: 100
   }
 )

@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20170827183042) do
     t.integer "year", null: false
     t.integer "grade", null: false
     t.integer "study_hours", null: false
+    t.string "room"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["group_id"], name: "index_courses_on_group_id"
