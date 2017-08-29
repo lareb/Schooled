@@ -1,4 +1,4 @@
-- current_user.school.timetable.slots.order(:start_time).each do |slot|
+- current_user.school.slots.order(:start_time).each do |slot|
   tr
     td = "#{Time.at(slot.start_time).utc.strftime("%H:%M")}-#{Time.at(slot.end_time).utc.strftime("%H:%M")}"
     - (0..4).each do |day|

@@ -1,3 +1,3 @@
 class Slot < ApplicationRecord
-  belongs_to :timetable
+  belongs_to :school
 end

@@ -11,7 +11,7 @@ table.col-xs-12.lessons.text-center
       th.text-center Thursday
       th.text-center Friday
   tbody
-    - current_user.school.timetable.slots.order(:start_time).each do |slot|
+    - current_user.school.slots.order(:start_time).each do |slot|
       - if @lessons.where(slot_id: slot.id).any?
         tr
           td = "#{Time.at(slot.start_time).utc.strftime("%H:%M")}-#{Time.at(slot.end_time).utc.strftime("%H:%M")}"

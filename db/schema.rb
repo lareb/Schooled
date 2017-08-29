@@ -117,12 +117,12 @@ ActiveRecord::Schema.define(version: 20170827183042) do
   end
 
   create_table "slots", force: :cascade do |t|
-    t.bigint "timetable_id"
+    t.bigint "school_id"
     t.integer "start_time"
     t.integer "end_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["timetable_id"], name: "index_slots_on_timetable_id"
+    t.index ["school_id"], name: "index_slots_on_school_id"
   end
 
   create_table "subjects", force: :cascade do |t|
@@ -130,13 +130,6 @@ ActiveRecord::Schema.define(version: 20170827183042) do
     t.integer "grade", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "timetables", force: :cascade do |t|
-    t.bigint "school_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["school_id"], name: "index_timetables_on_school_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -163,6 +156,5 @@ ActiveRecord::Schema.define(version: 20170827183042) do
   add_foreign_key "lessons", "courses"
   add_foreign_key "lessons", "groups"
   add_foreign_key "lessons", "slots"
-  add_foreign_key "slots", "timetables"
-  add_foreign_key "timetables", "schools"
+  add_foreign_key "slots", "schools"
 end

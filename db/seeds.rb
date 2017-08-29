@@ -111,105 +111,100 @@ Course.find_or_create_by(
     study_hours: 100
   }
 )
-Timetable.find_or_create_by(
-  {
-    school_id: 1
-  }
-)
 Slot.find_or_create_by(
   {
-    timetable_id: 1,
+    school_id: 1,
     start_time: 26700,
     end_time: 29400
   }
 )
 Slot.find_or_create_by(
   {
-    timetable_id: 1,
+    school_id: 1,
     start_time: 26700,
     end_time: 29400
   }
 )
 Slot.find_or_create_by(
   {
-    timetable_id: 1,
+    school_id: 1,
     start_time: 30000,
     end_time: 32700
   }
 )
 Slot.find_or_create_by(
   {
-    timetable_id: 1,
+    school_id: 1,
     start_time: 33900,
     end_time: 36600
   }
 )
 Slot.find_or_create_by(
   {
-    timetable_id: 1,
+    school_id: 1,
     start_time: 37200,
     end_time: 39900
   }
 )
 Slot.find_or_create_by(
   {
-    timetable_id: 1,
+    school_id: 1,
     start_time: 40500,
     end_time: 43200
   }
 )
 Slot.find_or_create_by(
   {
-    timetable_id: 1,
+    school_id: 1,
     start_time: 43800,
     end_time: 46500
   }
 )
 Slot.find_or_create_by(
   {
-    timetable_id: 1,
+    school_id: 1,
     start_time: 47100,
     end_time: 49800
   }
 )
 Slot.find_or_create_by(
   {
-    timetable_id: 1,
+    school_id: 1,
     start_time: 51000,
     end_time: 53700
   }
 )
 Slot.find_or_create_by(
   {
-    timetable_id: 1,
+    school_id: 1,
     start_time: 54300,
     end_time: 57000
   }
 )
 Slot.find_or_create_by(
   {
-    timetable_id: 1,
+    school_id: 1,
     start_time: 57600,
     end_time: 60300
   }
 )
 Slot.find_or_create_by(
   {
-    timetable_id: 1,
+    school_id: 1,
     start_time: 60900,
     end_time: 63600
   }
 )
 Slot.find_or_create_by(
   {
-    timetable_id: 1,
+    school_id: 1,
     start_time: 63900,
     end_time: 66600
   }
 )
 Slot.find_or_create_by(
   {
-    timetable_id: 1,
+    school_id: 1,
     start_time: 67200,
     end_time: 69900
   }
