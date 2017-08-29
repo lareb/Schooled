@@ -1,0 +1,1 @@
+$("#<%=@purpose%> tr.<%=@student.id%>").after("<%= escape_javascript(render 'courses/student_row', student: @student, purpose: @purpose) %>").remove();

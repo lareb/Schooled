@@ -5,6 +5,7 @@ class User < ApplicationRecord
   has_one :hr_group, class_name: "Group"
 
   has_many :courses
+  has_many :lessons, through: :courses
   has_many :marks
   has_many :absences
   has_many :invitations
@@ -29,5 +30,13 @@ class User < ApplicationRecord
 
   def admin?
     admin
+  end
+
+  def teacher?
+    super && accepted
+  end
+
+  def student?
+    super && accepted
   end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170823163740) do
+ActiveRecord::Schema.define(version: 20170827183042) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20170823163740) do
     t.integer "year", null: false
     t.integer "grade", null: false
     t.integer "study_hours", null: false
+    t.string "room"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["group_id"], name: "index_courses_on_group_id"
@@ -64,6 +65,18 @@ ActiveRecord::Schema.define(version: 20170823163740) do
     t.datetime "updated_at", null: false
     t.index ["group_id"], name: "index_invitations_on_group_id"
     t.index ["user_id"], name: "index_invitations_on_user_id"
+  end
+
+  create_table "lessons", force: :cascade do |t|
+    t.bigint "course_id"
+    t.bigint "group_id"
+    t.bigint "slot_id"
+    t.integer "day"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["course_id"], name: "index_lessons_on_course_id"
+    t.index ["group_id"], name: "index_lessons_on_group_id"
+    t.index ["slot_id"], name: "index_lessons_on_slot_id"
   end
 
   create_table "marks", force: :cascade do |t|
@@ -103,6 +116,15 @@ ActiveRecord::Schema.define(version: 20170823163740) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "slots", force: :cascade do |t|
+    t.bigint "school_id"
+    t.integer "start_time"
+    t.integer "end_time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["school_id"], name: "index_slots_on_school_id"
+  end
+
   create_table "subjects", force: :cascade do |t|
     t.string "name", null: false
     t.integer "grade", null: false
@@ -131,4 +153,8 @@ ActiveRecord::Schema.define(version: 20170823163740) do
 
   add_foreign_key "groups", "schools"
   add_foreign_key "groups", "users"
+  add_foreign_key "lessons", "courses"
+  add_foreign_key "lessons", "groups"
+  add_foreign_key "lessons", "slots"
+  add_foreign_key "slots", "schools"
 end

@@ -5,4 +5,9 @@ class Course < ApplicationRecord
   belongs_to :group
 
   has_many :messages, as: :entity
+  has_many :lessons
+
+  def name
+    subject.name
+  end
 end

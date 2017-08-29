@@ -19,6 +19,7 @@ class CoursesController < ApplicationController
   end
 
   def edit
+    @school = School.find(params[:school_id])
   end
 
   def create
@@ -38,7 +39,7 @@ class CoursesController < ApplicationController
   def update
     respond_to do |format|
       if @course.update(course_params)
-        format.html { redirect_to @course, notice: 'Course was successfully updated.' }
+        format.html { redirect_to school_course_path(@course), notice: 'Course was successfully updated.' }
         format.json { render :show, status: :ok, location: @course }
       else
         format.html { render :edit }
@@ -61,6 +62,6 @@ class CoursesController < ApplicationController
     end
 
     def course_params
-      params.fetch(:course, {})
+      params.require(:course).permit(:grade, :study_hours, :group_id, :user_id, :subject_id, :year, :room)
     end
 end
