@@ -1,8 +1,9 @@
 class CreateSubjects < ActiveRecord::Migration[5.1]
   def change
     create_table :subjects do |t|
-      t.string :name,    null: false
-      t.integer :grade,  null: false
+      t.string :name,         null: false
+      t.string :aabreviation, null: false
+      t.integer :grade,       null: false
 
       t.timestamps
     end

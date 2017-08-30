@@ -26,6 +26,12 @@
         = link_to school_group_path(current_user.school, current_user.hr_group), class: 'col-xs-6' do
           i.fa.fa-users.col-xs-12
           span.col-xs-12 My class
+        = link_to user_marks_path(current_user), class: 'col-xs-6' do
+          i.fa.fa-pencil-square-o.col-xs-12
+          span.col-xs-12 Fill in marks
+        = link_to user_marks_path(current_user), class: 'col-xs-6' do
+          i.fa.fa-check-square-o.col-xs-12
+          span.col-xs-12 Fill in absences
       - elsif current_user.invitations.any?
         = link_to invitation_path(current_user.invitations.last), class: 'col-xs-6' do
           i.fa.fa-users.col-xs-12

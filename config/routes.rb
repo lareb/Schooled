@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'signup', to: 'users#new', as: 'signup'
 
   resources :users do
-    resources :marks, only: [:create, :destroy]
+    resources :marks, only: [:index, :create, :destroy]
   end
 
   resource :sessions, only: [:new, :create, :destroy]
