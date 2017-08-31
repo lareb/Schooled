@@ -21,7 +21,7 @@ h1.initial Register as a
                            include_blank: "Please Choose",
                            hint: "For #{Time.now.year}/#{Time.now.year+1}",
                            wrapper_html: {class: "hidden"}
-      = f.input :role, as: :hidden, input_html: {value: 'student'}
+      = f.hidden_field :role, value: 'student'
       = f.input :identification
       = f.input :number
 
@@ -56,7 +56,7 @@ h1.initial Register as a
       = f.input :password
       = f.input :password_confirmation
       = f.association :school, collection: School.order(:name)
-      = f.input :role, as: :hidden, input_html: {value: 'teacher'}
+      = f.hidden_field :role, value: 'teacher'
 
     .form-actions
       = f.button :submit

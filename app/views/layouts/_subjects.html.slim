@@ -1,0 +1,3 @@
+ul.subjects
+  - @courses.each do |course|
+    li = link_to course.name, controller: controller_name, action: action_name, user_id: current_user, course_id: course.id

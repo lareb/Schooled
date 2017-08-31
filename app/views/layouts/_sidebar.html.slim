@@ -1,52 +1,58 @@
-.sidebar.col-xs-11.col-sm-8.col-md-3
+.sidebar.col-xs-11.col-sm-8.col-md-2
   .logo SCHOOLED
   .content
     .personal
-      .image.col-xs-3.visible-lg
-        i.fa.fa-user-circle-o
-      .info.col-xs-9
+      .info.col-xs-12
         .name.col-xs-12 = link_to current_user.try(:name) || current_user.email, user_path(current_user)
         .role.col-xs-12 = "#{current_user.role} at #{current_user.school.name}" if current_user.school
         .role.col-xs-6 
         .footer.col-xs-12
           = link_to 'Settings', edit_user_path(current_user)
           = link_to 'Log out', logout_path
-    .col-xs-12.easy-access
-      = link_to root_path, class: 'col-xs-6' do
-        i.fa.fa-envelope-open-o.col-xs-12 
-        span.col-xs-12 Messeges
-      = link_to root_path, class: 'col-xs-6' do
-        i.fa.fa-bell-o.col-xs-12 
-        span.col-xs-12 Alerts
-      - if current_user.student?
-        = link_to school_group_path(current_user.school, current_user.group), class: 'col-xs-6' do
-          i.fa.fa-users.col-xs-12
-          span.col-xs-12 My class
-      - elsif current_user.teacher? && current_user.hr_group
-        = link_to school_group_path(current_user.school, current_user.hr_group), class: 'col-xs-6' do
-          i.fa.fa-users.col-xs-12
-          span.col-xs-12 My class
-        = link_to user_marks_path(current_user), class: 'col-xs-6' do
-          i.fa.fa-pencil-square-o.col-xs-12
-          span.col-xs-12 Fill in marks
-        = link_to user_marks_path(current_user), class: 'col-xs-6' do
-          i.fa.fa-check-square-o.col-xs-12
-          span.col-xs-12 Fill in absences
-      - elsif current_user.invitations.any?
-        = link_to invitation_path(current_user.invitations.last), class: 'col-xs-6' do
-          i.fa.fa-users.col-xs-12
-          span.col-xs-12 Your application
-      - else   
-        = link_to new_invitation_path, class: 'col-xs-6' do
-          i.fa.fa-users.col-xs-12
-          span.col-xs-12 Enroll a class 
+    ul.col-xs-12.easy-access
+      li
+        = link_to root_path do
+          i.fa.fa-envelope-open-o 
+          span Messeges
       - if current_user.teacher? || current_user.student?
-        = link_to school_courses_path(current_user.school), class: 'col-xs-6' do
-          i.fa.fa-tasks.col-xs-12
-          span.col-xs-12 My courses
-        = link_to school_lessons_path(current_user.school), class: 'col-xs-6' do
-          i.fa.fa-calendar.col-xs-12
-          span.col-xs-12 Week schedule
+        li
+          = link_to school_lessons_path(current_user.school) do
+            i.fa.fa-calendar
+            span Week schedule
+      - if current_user.student?
+        li
+          = link_to school_group_path(current_user.school, current_user.group) do
+            i.fa.fa-users
+            span My class
+      - elsif current_user.teacher? && current_user.hr_group
+        li
+          = link_to school_group_path(current_user.school, current_user.hr_group) do
+            i.fa.fa-users
+            span My class
+          ul
+            li
+              = link_to user_marks_path(current_user) do
+                i.fa.fa-pencil-square-o
+                span Fill in marks
+            li
+              = link_to user_absences_path(current_user) do
+                i.fa.fa-check-square-o
+                span Fill in absences
+      - elsif current_user.invitations.any?
+        li
+          = link_to invitation_path(current_user.invitations.last) do
+            i.fa.fa-users
+            span Your application
+      - else  
+        li 
+          = link_to new_invitation_path do
+            i.fa.fa-users
+            span Enroll a class 
+      - if current_user.teacher? || current_user.student?
+        li
+          = link_to school_courses_path(current_user.school) do
+            i.fa.fa-tasks
+            span My courses
 
 
 

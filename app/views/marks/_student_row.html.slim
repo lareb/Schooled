@@ -14,11 +14,7 @@ tr[class='#{student.id}']
   td.col-xs-4 style="padding-left: 0px; padding-right: 0px;"
     - @mark = student.marks.new
     = simple_form_for [student, @mark], remote: true do |f|
-      ul.give-marks style="padding-left: 0px; padding-right: 0px; width: 246px; margin: 0 auto;"
-        li
-          - if student_marks.any?
-            = link_to user_mark_path(user_id: student, id: student_marks.order(created_at: :desc).first), method: :delete, remote: true, class: "delete" do
-              i.fa.fa-undo
+      ul.give-marks.list-inline style="padding-left: 0px; padding-right: 0px; width: 246px; margin: 0 auto;"
         li 
           a.new 2
         li 
@@ -29,6 +25,10 @@ tr[class='#{student.id}']
           a.new 5
         li 
           a.new 6
-      = f.input :course_id, as: :hidden, input_html: {value: @course.id}
+        li
+          - if student_marks.any?
+            = link_to user_mark_path(user_id: student, id: student_marks.order(created_at: :desc).first), method: :delete, remote: true, class: "delete" do
+              i.fa.fa-undo
+      = f.hidden_field :course_id, value: @course.id
       = f.input :mark, as: :hidden, input_html: {value: '', class: 'mark'}
-      = f.input :purpose, as: :hidden, input_html: {value: purpose}
+      = f.hidden_field :purpose, value: purpose

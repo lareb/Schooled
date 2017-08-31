@@ -19,6 +19,7 @@
 		height: 100%;
 		width: calc(100% + 15px);
 		overflow-y: scroll;
+		overflow-x: hidden;
 	}
 	.logo{
 		position: absolute;
@@ -26,7 +27,7 @@
 		font-size: 15px;
 	}
 	.personal{
-		padding: 15px;
+		padding: 20px 10px;
 		position: relative;
 		overflow: hidden;
 		background-color: rgba(0,0,0,0.2);
@@ -36,12 +37,6 @@
 		.name a{
 			color: white;
 			font-size: 15px;
-		}
-		.image i{
-			font-size: 100px;
-			width: 100px;
-			height: 100px;
-			margin: auto auto;
 		}
 		.info{
 			font-weight: bold;
@@ -62,23 +57,27 @@
 	}
 	.easy-access{
 		padding: 0px;
-		a{
-			padding: 10px;
-			color: white;
-			text-align: center;
-			span{
-				font-size: 15px;
+		li{
+			a{
+				line-height: 75px !important;
+				width: 1000px !important;
+				padding: 30px;
+				color: white;
+				text-align: center;
+				span{
+					font-size: 15px;
+				}
+				i{
+					padding: 10px;
+					font-size: 25px;
+				}
 			}
-			i{
-				padding: 10px;
-				font-size: 25px;
+			a:hover{
+				background-color: rgba(0,0,0,0.1);
 			}
-		}
-		a:hover{
-			background-color: rgba(0,0,0,0.1);
-		}
-		a:active{
-			background-color: rgba(0,0,0,0.3);
+			a:active{
+				background-color: rgba(0,0,0,0.3);
+			}
 		}
 	}
 	.sidebar-footer{
@@ -94,6 +93,24 @@
 		i{
 			font-size: 20px;
 			padding: 0px 15px 10px 15px;
+		}
+	}
+}
+
+.right-sidebar{
+	padding: 0px !important;
+	.content{
+		position: fixed;
+		top: 290px;
+	}
+	ul.subjects{
+		list-style: none;
+		li{
+			padding: 10px;
+			a{
+				padding: 10px;
+				font-weight: bold;
+			}
 		}
 	}
 }

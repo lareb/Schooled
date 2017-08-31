@@ -2,12 +2,12 @@ class MarksController < ApplicationController
   before_action :set_student, except: [:index]
 
   def index
-    @group = current_user.hr_group
-    @courses = @group.courses.sort_by {|c| c.name }
-    @course = Course.find_by_id(params[:course_id]) || @courses.first
-    @next_course = next_course(@course, @courses)
+    @group            = current_user.hr_group
+    @students         = @group.students
+    @courses          = @group.courses.sort_by {|c| c.name }
+    @course           = Course.find_by_id(params[:course_id]) || @courses.first
+    @next_course      = next_course(@course, @courses)
     @next_next_course = next_course(@next_course, @courses)
-    @students = @group.students
   end
 
   def create

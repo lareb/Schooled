@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   resources :users do
     resources :marks, only: [:index, :create, :destroy]
+    resources :absences, only: [:index, :create, :update]
   end
 
   resource :sessions, only: [:new, :create, :destroy]

@@ -9,7 +9,7 @@
 				th Add grade
 		tbody
 			- @students.each do |student|
-				= render 'student_row', student: student, purpose: (purpose || "first_term")
+				= render 'marks/student_row', student: student, purpose: (purpose || "first_term")
 
 - if current_user.student?
 	.col-xs-6
