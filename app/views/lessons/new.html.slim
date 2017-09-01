@@ -3,10 +3,10 @@ table.col-xs-12.lessons
     tr
       th.text-center
         i.fa.fa-clock-o.fa-2x
-      th Monday
-      th Tuesday
-      th Wednesday
-      th Thursday
-      th Friday
+      th.text-center = t('date.day_names')[1] 
+      th.text-center = t('date.day_names')[2] 
+      th.text-center = t('date.day_names')[3] 
+      th.text-center = t('date.day_names')[4] 
+      th.text-center = t('date.day_names')[5]
   tbody
     = render 'form'

@@ -1,12 +1,12 @@
 .menu
-  = link_to "Week schedule", new_school_lesson_path(@group.school)
+  = link_to (t 'button.week_schedule') , new_school_lesson_path(@group.school)
 = render 'requests'
 
 table.table-responsive.col-xs-12
   thead
     tr
-      th.col-xs-6 Name
-      th.col-xs-5 Actions
+      th.col-xs-6 = t 'table_header.name' 
+      th.col-xs-5 = t 'table_header.actions' 
 
   tbody
     - @group.students.each do |student|

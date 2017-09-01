@@ -1,3 +1,4 @@
 .col-md-2.right-sidebar
   .content.col-xs-12
     = render 'layouts/subjects' if controller_name.in?(['absences', 'marks']) && action_name == 'index'
+    = render 'layouts/subjects' if controller_name == 'courses' && action_name == 'show'

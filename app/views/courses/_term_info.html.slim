@@ -20,6 +20,6 @@
 		h3 = (t 'title.absences')
 		ul
 			li = (t 'table_header.excused')
-			= current_user.absences.where(course_id: @course.id, excused: true, purpose: purpose).sum("value")
+			= current_user.absences.where(course_id: @course.id, purpose: purpose).first.try(:excused) || 0
 			li = (t 'table_header.permanent')
-			= current_user.absences.where(course_id: @course.id, excused: false, purpose: purpose).sum("value")
+			= current_user.absences.where(course_id: @course.id, purpose: purpose).first.try(:permanent) || 0

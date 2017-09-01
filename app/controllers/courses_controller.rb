@@ -12,6 +12,8 @@ class CoursesController < ApplicationController
 
   def show
     @students = @course.group.students
+    @courses = current_user.group.courses if current_user.student?
+    @courses = current_user.courses if current_user.teacher?
   end
 
   def new
@@ -58,7 +60,7 @@ class CoursesController < ApplicationController
 
   private
     def set_course
-      @course = Course.find(params[:id])
+      @course = Course.find_by_id(params[:course_id]) || Course.find(params[:id])
     end
 
     def course_params

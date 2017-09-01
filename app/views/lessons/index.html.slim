@@ -1,15 +1,15 @@
-h1 My week schedule
+h1 = t 'title.my_week_schedule' 
 
 table.col-xs-12.lessons.text-center
   thead
     tr
       th.text-center
         i.fa.fa-clock-o.fa-2x
-      th.text-center Monday
-      th.text-center Tuesday
-      th.text-center Wednesday
-      th.text-center Thursday
-      th.text-center Friday
+      th.text-center = t('date.day_names')[1] 
+      th.text-center = t('date.day_names')[2] 
+      th.text-center = t('date.day_names')[3] 
+      th.text-center = t('date.day_names')[4] 
+      th.text-center = t('date.day_names')[5] 
   tbody
     - current_user.school.slots.order(:start_time).each do |slot|
       - if @lessons.where(slot_id: slot.id).any?

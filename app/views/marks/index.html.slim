@@ -1,6 +1,4 @@
-h1 
-  | Marks for
-  = " #{@course.subject.name}"
+h1 = t "title.marks_for", subject: @course.name
 
 
 ul.nav.nav-tabs
