@@ -205,6 +205,25 @@ bg:
     my_courses: Моите предмети
     your_application: Вашата молба
     enroll_class: Пратете молба
+    term_1: Първи срок
+    term_1_final: Първи срок финални
+    term_2: Втори срок
+    term_2_final: Втори срок финални
+    final: Годишни
+  table_header:
+    name: Име
+    excused: Извинени
+    permanent: Неизвинени
+    grades: Оценки
+    avg: Средно
+    add_grade: Добави оценка
+  title:
+    absences: Отсъствия
+    absences_for: Отсъствия по
+    marks: Оценки
+    edit_course: Настройки на предмет
+    new_course: Нов предмет
+    grade: %{grade}-ти клас
   roles:
     student: Ученик
     teacher: Учител

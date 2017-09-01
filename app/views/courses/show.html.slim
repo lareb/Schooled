@@ -2,20 +2,20 @@ h1
 	= "#{@course.subject.name} #{@course.group.grade}#{@course.group.name}"
 	.pull-right
 		= @course.teacher.name if current_user.student?
-		= link_to "Edit course", edit_school_course_path(current_user.school, @course) if current_user.teacher?
+		= link_to (t 'title.edit_course'), edit_school_course_path(current_user.school, @course) if current_user.teacher?
 
 
 ul.nav.nav-tabs
-	li.active
-		a data-toggle="tab" href="#first_term" Term 1
-	li
-		a data-toggle="tab" href="#first_term_final" Term 1 Final
-	li
-		a data-toggle="tab" href="#second_term" Term 2
-	li
-		a data-toggle="tab" href="#second_term_final" Term 2 Final
-	li
-		a data-toggle="tab" href="#final" Final
+  li.active
+    a data-toggle="tab" href="#first_term" = (t 'button.term_1')
+  li
+    a data-toggle="tab" href="#first_term_final" = (t 'button.term_1_final')
+  li
+    a data-toggle="tab" href="#second_term" = (t 'button.term_2')
+  li
+    a data-toggle="tab" href="#second_term_final" = (t 'button.term_2_final')
+  li
+    a data-toggle="tab" href="#final" = (t 'button.final')
 
 .tab-content
 	#first_term.tab-pane.active.fade.in

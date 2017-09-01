@@ -1,19 +1,17 @@
-h1 
-  | Absences for
-  = " #{@course.subject.name}"
+h1 = "#{t 'title.absences_for'} #{@course.subject.name}"
 
 
 ul.nav.nav-tabs
   li.active
-    a data-toggle="tab" href="#first_term" Term 1
+    a data-toggle="tab" href="#first_term" = (t 'button.term_1')
   li
-    a data-toggle="tab" href="#first_term_final" Term 1 Final
+    a data-toggle="tab" href="#first_term_final" = (t 'button.term_1_final')
   li
-    a data-toggle="tab" href="#second_term" Term 2
+    a data-toggle="tab" href="#second_term" = (t 'button.term_2')
   li
-    a data-toggle="tab" href="#second_term_final" Term 2 Final
+    a data-toggle="tab" href="#second_term_final" = (t 'button.term_2_final')
   li
-    a data-toggle="tab" href="#final" Final
+    a data-toggle="tab" href="#final" = (t 'button.final')
 
 .tab-content.absences
   #first_term.tab-pane.active.fade.in
