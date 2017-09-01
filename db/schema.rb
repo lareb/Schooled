@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 20170827183042) do
   create_table "absences", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "course_id"
-    t.integer "value", default: 1, null: false
+    t.decimal "excused", default: "0.0", null: false
+    t.decimal "permanent", default: "0.0", null: false
     t.integer "purpose", default: 0, null: false
-    t.boolean "excused", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["course_id"], name: "index_absences_on_course_id"
@@ -127,6 +127,7 @@ ActiveRecord::Schema.define(version: 20170827183042) do
 
   create_table "subjects", force: :cascade do |t|
     t.string "name", null: false
+    t.string "abbreviation", null: false
     t.integer "grade", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

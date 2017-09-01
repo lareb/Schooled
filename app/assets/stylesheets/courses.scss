@@ -19,8 +19,12 @@ table.grades{
 }
 .nav.nav-tabs{
 	border-bottom: 0px;
+	a{
+		border-radius: 0px !important;
+	}
 	.active a, .active a:hover, .active a:focus{
 		font-size: 15px;
+		border: 0px;
 		border-top: 5px solid #2e7aa2;
 		border-radius: 5px;
 	}
@@ -35,12 +39,12 @@ table.grades{
 	}
 }
 .give-marks{
-	list-style: none;
-	li{
-		float: left;
-	}
 	a{
 		padding: 10px 15px;
+	}
+	li{
+		margin: 0px;
+		padding: 0px !important;
 	}
 	li:nth-of-type(1) a{
 		background-color: rgba(220,20,60,0.5);

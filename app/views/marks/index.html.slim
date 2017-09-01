@@ -1,0 +1,28 @@
+h1 
+  | Marks for
+  = " #{@course.subject.name}"
+
+
+ul.nav.nav-tabs
+  li.active
+    a data-toggle="tab" href="#first_term" Term 1
+  li
+    a data-toggle="tab" href="#first_term_final" Term 1 Final
+  li
+    a data-toggle="tab" href="#second_term" Term 2
+  li
+    a data-toggle="tab" href="#second_term_final" Term 2 Final
+  li
+    a data-toggle="tab" href="#final" Final
+
+.tab-content
+  #first_term.tab-pane.active.fade.in
+    = render 'marks_table', purpose: "first_term"
+  #first_term_final.tab-pane.fade
+    = render 'marks_table', purpose: "first_term_final"
+  #second_term.tab-pane.fade
+    = render 'marks_table', purpose: "second_term"
+  #second_term_final.tab-pane.fade
+    = render 'marks_table', purpose: "second_term_final"
+  #final.tab-pane.fade
+    = render 'marks_table', purpose: "final"

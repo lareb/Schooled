@@ -55,18 +55,21 @@ end
 Subject.find_or_create_by(
   {
     name: 'Mathematics',
+    abbreviation: 'Maths',
     grade: 10
   }
 )
 Subject.find_or_create_by(
   {
     name: 'Informatics',
+    abbreviation: 'IT',
     grade: 10
   }
 )
 Subject.find_or_create_by(
   {
     name: 'Biology',
+    abbreviation: 'Biology',
     grade: 10
   }
 )

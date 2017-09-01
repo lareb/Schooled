@@ -1,0 +1,10 @@
+table.grades
+  thead
+    tr
+      th #
+      th Name
+      th Excused
+      th Permanent
+  tbody
+    - @students.each do |student|
+      = render 'student_row', student: student, purpose: (purpose || "first_term")

@@ -3,9 +3,9 @@ class CreateAbsences < ActiveRecord::Migration[5.1]
     create_table :absences do |t|
       t.references :user,           index: true
       t.references :course,         index: true
-      t.integer :value,             null: false, default: 1
+      t.decimal :excused,           null: false, default: 0.0
+      t.decimal :permanent,         null: false, default: 0.0
       t.integer :purpose,           null: false, default: 0
-      t.boolean :excused,           null: false, default: false
 
       t.timestamps
     end

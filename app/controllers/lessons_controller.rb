@@ -29,6 +29,17 @@ class LessonsController < ApplicationController
     end
   end
 
+  def update
+    respond_to do |format|
+      if @lesson.update(lesson_params)
+        format.js { render 'create' }
+      else
+        @lesson.destroy!
+        format.js { render 'create' }
+      end
+    end
+  end
+
   def destroy
     @lesson.destroy
     respond_to do |format|

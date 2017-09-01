@@ -1,0 +1,25 @@
+.absences{
+  .list-inline{
+    li{
+      padding: 10px 15px;
+      font-weight: bold;
+    }
+    li{
+    }
+    li:nth-of-type(2){
+      width: 85px;
+      text-align: center;
+      background-color: rgba(97, 43, 255, 0.5);
+      font-weight: bold;
+      color: white;
+    }
+    li:hover{
+      background-color: #2e7aa2;
+      color: white;
+    }
+    li:nth-of-type(2):hover{
+      background-color: rgba(97, 43, 255, 0.5);
+      color: black;
+    }
+  }
+}
