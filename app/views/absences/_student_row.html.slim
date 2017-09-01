@@ -18,7 +18,6 @@ tr[class='#{student.id}']
       = f.hidden_field :user_id, value: student.id
       = f.hidden_field :course_id, value: @course.id
       = f.input :excused, html: {value: 0 }
-      = f.input :permanent, html: {value: 0 }
       = f.button :submit
   td.col-xs-4.permanent-add
     ul.list-inline
@@ -32,6 +31,5 @@ tr[class='#{student.id}']
       = f.hidden_field :purpose, value: purpose
       = f.hidden_field :user_id, value: student.id
       = f.hidden_field :course_id, value: @course.id
-      = f.input :excused, html: {value: 0 }
       = f.input :permanent, html: {value: 0 }
       = f.button :submit

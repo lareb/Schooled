@@ -1,4 +1,4 @@
-$(function() {
+document.addEventListener("turbolinks:load", function() {
 	$('a.student').click(function(){
 		$('h1.initial').hide();
 		$('.register-options').hide();

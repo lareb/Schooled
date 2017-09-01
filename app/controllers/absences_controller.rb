@@ -14,6 +14,9 @@ class AbsencesController < ApplicationController
   def create
     @absence = Absence.new(absence_params)
 
+    @student = @absence.student
+    @course  = @absence.course
+
     respond_to do |format|
       if @absence.save
         format.js { render 'absence.js' }
