@@ -2,9 +2,9 @@ table.grades
   thead
     tr
       th #
-      th Name
-      th Excused
-      th Permanent
+      th = (t 'table_header.name')
+      th = (t 'table_header.excused')
+      th = (t 'table_header.permanent')
   tbody
     - @students.each do |student|
       = render 'student_row', student: student, purpose: (purpose || "first_term")

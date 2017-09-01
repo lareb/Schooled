@@ -10,4 +10,12 @@ class Course < ApplicationRecord
   def name
     subject.name
   end
+
+  def abbreviation
+    subject.abbreviation
+  end
+
+  def name_class
+    "#{abbreviation} #{group.grade}#{group.name}"
+  end
 end

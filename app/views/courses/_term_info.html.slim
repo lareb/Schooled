@@ -3,23 +3,23 @@
 		thead
 			tr
 				th #
-				th Name
-				th Grades
-				th Avg.
-				th Add grade
+				th = (t 'table_header.name')
+				th = (t 'table_header.grades')
+				th = (t 'table_header.avg')
+				th = (t 'table_header.add_grade')
 		tbody
 			- @students.each do |student|
 				= render 'marks/student_row', student: student, purpose: (purpose || "first_term")
 
 - if current_user.student?
 	.col-xs-6
-		h3 Marks
+		h3 = (t 'title.marks')
 		- current_user.marks.where(course_id: @course.id, purpose: purpose).each do |mark|
 				.marks = mark.mark
 	.col-xs-6
-		h3 Absences
+		h3 = (t 'title.absences')
 		ul
-			li Excused
-			= current_user.absences.where(course_id: @course.id, excused: true, purpose: purpose).sum("value")
-			li Permanent
-			= current_user.absences.where(course_id: @course.id, excused: false, purpose: purpose).sum("value")
+			li = (t 'table_header.excused')
+			= current_user.absences.where(course_id: @course.id, purpose: purpose).first.try(:excused) || 0
+			li = (t 'table_header.permanent')
+			= current_user.absences.where(course_id: @course.id, purpose: purpose).first.try(:permanent) || 0

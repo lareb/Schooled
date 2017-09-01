@@ -6,9 +6,6 @@ document.addEventListener("turbolinks:load", function() {
             case "minus-1":
               absence = -1;
               break;
-            case "plus-1-3":
-              absence = 0.33;
-              break;
             case "plus-1":
               absence = 1;
               break;

@@ -1,9 +1,9 @@
 table.table-responsive.col-xs-12
   thead
     tr
-      th.col-xs-6.col-md-4  Name
-      th.hidden-xs.col-md-4 Address
-      th.col-xs-6.col-md-4  Actions
+      th.col-xs-6.col-md-4  = t 'table_header.name'
+      th.hidden-xs.col-md-4 = t 'table_header.address'
+      th.col-xs-6.col-md-4  = t 'table_header.actions'
 
   tbody
     - @schools.each do |school|

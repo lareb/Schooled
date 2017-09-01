@@ -5,7 +5,6 @@ class CreateMarks < ActiveRecord::Migration[5.1]
       t.references :user,             index: true
       t.integer :mark,                null: false
       t.integer :purpose,             default: 0
-      t.boolean :approved
       t.string :description
 
       t.timestamps

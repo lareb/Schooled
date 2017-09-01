@@ -9,6 +9,6 @@ nav.navbar.navbar-fixed-top
     #collapse-navbar-1.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li
-          = link_to 'New user', signup_path
+          = link_to (t 'button.signup'), signup_path
         li 
-          = link_to 'Log in', login_path, class: 'important'
+          = link_to (t 'button.login'), login_path, class: 'important'
