@@ -1,5 +1,6 @@
 class MarksController < ApplicationController
   before_action :set_student, except: [:index]
+  load_and_authorize_resource
 
   def index
     @group            = current_user.hr_group
