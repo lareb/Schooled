@@ -1,6 +1,7 @@
 class AbsencesController < ApplicationController
   include AbsencesHelper
   before_action :set_absence, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource
 
   def index
     @group            = current_user.hr_group
