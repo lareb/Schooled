@@ -84,7 +84,6 @@ ActiveRecord::Schema.define(version: 20170827183042) do
     t.bigint "user_id"
     t.integer "mark", null: false
     t.integer "purpose", default: 0
-    t.boolean "approved"
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

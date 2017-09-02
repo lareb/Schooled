@@ -68,7 +68,6 @@ a.important{
 	border: 1px solid #2e7aa2;
 }
 #content a, #content .btn{
-	font-weight: bold !important;
 	color: #104b6a;
 }
 .footer{
@@ -89,14 +88,17 @@ table thead tr th{
 	background-color: #2e7aa2;
 	color: white;
 	font-size: 15px;
-	font-weight: bold;
+	font-weight: normal;
 }
 table{
 	border: 0px !important;
 }
-table tbody tr td{
-	padding: 20px 0px 0px 0px;
+table tbody tr{
 	font-size: 15px;
+	td{
+		line-height: 20px !important;
+		padding: 20px 0px;
+	}
 }
 h1{
 	font-size: 15px;
@@ -111,4 +113,7 @@ h1{
 }
 h3{
 	margin-top: 50px;
+}
+.list-inline{
+	margin: 0px;
 }

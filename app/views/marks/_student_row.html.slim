@@ -9,7 +9,6 @@ tr[class='#{student.id}']
       .received-marks.col-xs-1 = mark.mark
   td.col-xs-1
     - if student_marks.size > 0
-      | Avg. 
       = '%.2f' % student_marks.average(:mark)
   td.col-xs-4 style="padding-left: 0px; padding-right: 0px;"
     - @mark = student.marks.new
