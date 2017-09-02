@@ -1,6 +1,6 @@
 document.addEventListener("turbolinks:load", function() {
   $(function() {
-      $('.absences').on("click", ".excused-add li", function(){
+      $('.absences').on("click", ".excused-add li a", function(){
           absence  = $(this).attr("class");
           switch(absence){
             case "minus-1":
@@ -15,10 +15,10 @@ document.addEventListener("turbolinks:load", function() {
             default:
               absence = 0;
           }
-          $(this).parent().parent().find('form').find('.absence_excused').find('input')[0].value = absence;
-          $(this).parent().parent().find('form').find('.btn').click();
+          $(this).parent().parent().parent().find('form').find('.absence_excused').find('input')[0].value = absence;
+          $(this).parent().parent().parent().find('form').find('.btn').click();
       });
-      $('.absences').on("click", ".permanent-add li", function(){
+      $('.absences').on("click", ".permanent-add li a", function(){
           absence  = $(this).attr("class");
           switch(absence){
             case "minus-1":
@@ -36,8 +36,8 @@ document.addEventListener("turbolinks:load", function() {
             default:
               absence = 0;
           }
-          $(this).parent().parent().find('form').find('.absence_permanent').find('input')[0].value = absence;
-          $(this).parent().parent().find('form').find('.btn').click();
+          $(this).parent().parent().parent().find('form').find('.absence_permanent').find('input')[0].value = absence;
+          $(this).parent().parent().parent().find('form').find('.btn').click();
       });
   });
 })
