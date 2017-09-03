@@ -1,0 +1,9 @@
+- course_marks = @user.marks.where(course_id: course.id, purpose: purpose)
+tr
+  td = course.name
+  td
+    - course_marks.each do |mark|
+      .received-marks.col-xs-1 = mark.mark
+  td.text-center = @user.absences.where(course_id: course.id, purpose: purpose).first.try(:excused).to_s.gsub(/(\.)0+$/, '') || 0
+  td.text-center = @user.absences.where(course_id: course.id, purpose: purpose).first.try(:permanent).to_s.gsub(/(\.)0+$/, '') || 0
+

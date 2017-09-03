@@ -230,6 +230,8 @@ bg:
     class: Клас
     teacher: Учител
     address: Адрес
+    hr_teacher: "Класен: "
+    subject: Предмет
   title:
     absences: Отсъствия
     absences_for: Отсъствия по %{subject}
@@ -247,6 +249,7 @@ bg:
     login: Влез в профила си
     setting: Настройки
     register_as: Регистрирай се като
+    role_in_school: "%{role} в %{school}"
   role:
     student: Ученик
     teacher: Учител

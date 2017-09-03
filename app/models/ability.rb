@@ -25,7 +25,8 @@ class Ability
     elsif user.student?
 
       can :read, [Absence, Invitation, Mark], user_id: user.id
-      can :read, [Course, Lesson, User], group_id: user.group_id
+      can :read, [Course, Lesson], group_id: user.group_id
+      can :read, User, school_id: user.school_id
       can :read, Group, id: user.group_id
       can :read, School, id: user.school_id
 

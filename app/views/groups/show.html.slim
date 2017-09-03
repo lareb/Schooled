@@ -9,6 +9,6 @@ table.table-responsive.col-xs-12
   tbody
     - @group.students.each do |student|
       tr
-        td.col-xs-2 = student.name
+        td.col-xs-2 = link_to student.name, user_path(student)
         td.col-xs-5 
 

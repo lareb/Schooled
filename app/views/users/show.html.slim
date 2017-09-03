@@ -1,0 +1,51 @@
+h1 
+  = @user.name
+  .pull-right
+    = @user.title
+
+- if @user.student?
+
+  .col-xs-12.student-general-info
+    .col-xs-12.col-md-6
+      .student
+        .fa.fa-phone
+        .info = @user.phone_number
+        br
+        br
+        .fa.fa-envelope-open-o
+        .info = @user.email
+
+
+    .col-xs-12.col-md-6
+      .hr_teacher
+        .info 
+          = t 'table_header.hr_teacher'
+          = @user.group.hr_teacher.name
+        br
+        br
+        .fa.fa-phone
+        .info = @user.group.hr_teacher.phone_number
+
+  ul.nav.nav-tabs.col-xs-12
+    li.active
+      a data-toggle="tab" href="#first_term" = (t 'button.term_1')
+    li
+      a data-toggle="tab" href="#first_term_final" = (t 'button.term_1_final')
+    li
+      a data-toggle="tab" href="#second_term" = (t 'button.term_2')
+    li
+      a data-toggle="tab" href="#second_term_final" = (t 'button.term_2_final')
+    li
+      a data-toggle="tab" href="#final" = (t 'button.final')
+
+  .tab-content
+    #first_term.tab-pane.active.fade.in
+      = render 'info_table', purpose: "first_term"
+    #first_term_final.tab-pane.fade
+      = render 'info_table', purpose: "first_term_final"
+    #second_term.tab-pane.fade
+      = render 'info_table', purpose: "second_term"
+    #second_term_final.tab-pane.fade
+      = render 'info_table', purpose: "second_term_final"
+    #final.tab-pane.fade
+      = render 'info_table', purpose: "final"

@@ -1,0 +1,10 @@
+table.info.col-xs-12
+  thead
+    tr
+      th = t 'table_header.subject'
+      th.text-center = t 'table_header.grades'
+      th.text-center = t 'table_header.excused'
+      th.text-center = t 'table_header.permanent'
+  tbody
+    - @courses.each do |course|
+      = render 'course_row', course: course, purpose: (purpose || "first_term")

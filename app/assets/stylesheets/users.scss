@@ -17,3 +17,16 @@
 		color: white !important; 
 	}
 }
+
+.student-general-info{
+	margin-bottom: 30px;
+	.student, .hr_teacher{
+		border: 1px solid rgba(46,122,162, 1);
+		padding: 30px 20px;
+		.info{
+			font-size: 15px;
+			display: inline;
+			margin-left: 15px;
+		}
+	}
+}

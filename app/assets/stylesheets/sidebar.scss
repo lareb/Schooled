@@ -103,6 +103,9 @@
 		position: fixed;
 		top: 290px;
 	}
+	ul{
+		list-style: none;
+	}
 	ul.subjects{
 		list-style: none;
 		li{
@@ -111,5 +114,11 @@
 				padding: 10px;
 			}
 		}
+	}
+	h1.grades{
+		margin-top: 85px;
+		font-weight: normal;
+		padding: 20px;
+		border: 0px;
 	}
 }

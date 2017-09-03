@@ -6,6 +6,9 @@ class UsersController < ApplicationController
   end
 
   def show
+    @user = User.find(params[:id])
+    @courses = @user.group.courses if @user.student?
+    @courses = @courses.where(grade: params[:grade]) if params[:grade]
   end
 
   def new

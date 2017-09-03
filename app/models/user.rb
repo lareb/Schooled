@@ -39,4 +39,9 @@ class User < ApplicationRecord
   def student?
     super && accepted
   end
+
+  def title
+    role = I18n.t ("role." + self.role)
+    return I18n.t 'title.role_in_school', role: role, school: school.name
+  end
 end
